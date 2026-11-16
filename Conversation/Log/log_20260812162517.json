@@ -1,0 +1,44 @@
+{
+  "project_id": "PATH_20260812162517",
+  "created_at": "2026-08-12T04:25:19.106Z",
+  "mode": "path-bubble-picker",
+  "language": "zh-CN",
+  "selections": {
+    "season": {
+      "label": "深秋",
+      "path": [
+        "autumn",
+        "autumn_late"
+      ]
+    },
+    "weather": {
+      "label": "狂风",
+      "path": [
+        "wind",
+        "wind_gale"
+      ]
+    },
+    "time": {
+      "label": "暮色四合",
+      "path": [
+        "dusk",
+        "dusk_twilight"
+      ]
+    },
+    "light": {
+      "label": "忽明忽暗",
+      "path": [
+        "dramatic",
+        "dramatic_flicker"
+      ]
+    },
+    "road": {
+      "course": "winding",
+      "width": "medium",
+      "surface": "dirt",
+      "custom": false,
+      "label": "蜿蜒曲折 · 适中 · 泥土"
+    }
+  },
+  "title": "Autumn's Windy Dusk"
+}

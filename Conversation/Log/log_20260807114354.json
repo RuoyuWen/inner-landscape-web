@@ -1,0 +1,44 @@
+{
+  "project_id": "PATH_20260807114354",
+  "created_at": "2026-08-06T23:43:56.171Z",
+  "mode": "path-bubble-picker",
+  "language": "zh-CN",
+  "selections": {
+    "season": {
+      "label": "早春",
+      "path": [
+        "spring",
+        "spring_early"
+      ]
+    },
+    "weather": {
+      "label": "微云点缀",
+      "path": [
+        "clear",
+        "clear_light_clouds"
+      ]
+    },
+    "time": {
+      "label": "破晓",
+      "path": [
+        "dawn",
+        "dawn_daybreak"
+      ]
+    },
+    "light": {
+      "label": "温暖橙光",
+      "path": [
+        "soft",
+        "soft_amber"
+      ]
+    },
+    "road": {
+      "course": "straight",
+      "width": "narrow",
+      "surface": "dirt",
+      "custom": false,
+      "label": "笔直向前 · 狭窄 · 泥土"
+    }
+  },
+  "title": "Dawn Along the Early Spring Path"
+}

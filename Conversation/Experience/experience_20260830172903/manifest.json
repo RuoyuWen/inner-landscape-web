@@ -1,0 +1,9 @@
+{
+  "image_model": "gpt-image-2",
+  "flat_image_prompt": "The scene shows a modestly wide, straight gravel path, extending in a straight line from the foreground to a single vanishing point at the horizon, shown in centered one-point perspective. A modest, sparse number of trees stand along each side of the path -- not a dense or continuous row -- spaced well apart, canopies visible against the sky, thinning out further toward the horizon. The path and its flanking trees are the only structural elements in the scene -- no forks, no side paths, no clearings, no other landmarks. The scene is set during peak summer, with a blazing sun casting a warm amber glow over the landscape. The air is warm with a hint of dry heat, and the sunset bathes everything in golden hues. Dappled light filters through the canopies, creating a serene and tranquil ambiance. Create one realistic flat 2D landscape image, single camera view, natural perspective, 3:2 composition, not panoramic, not equirectangular, no fisheye distortion, no split view, no frame, no text, no watermark.",
+  "sound_prompt": "very quiet, sun-warmed stillness; at most a faint breeze Soft, clean recording. No static, no hiss, no white noise, no distortion, no crackle, no clipping.",
+  "music_prompt": "disabled",
+  "image_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260830172903\\image.png",
+  "sound_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260830172903\\sound_effect.mp3",
+  "music_path": null
+}

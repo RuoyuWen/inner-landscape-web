@@ -1,0 +1,9 @@
+{
+  "image_model": "gpt-image-2",
+  "flat_image_prompt": "A vast desert landscape under the scorching summer sun at noon. The intense, glaring sunlight casts sharp shadows across the expansive sand dunes, which stretch endlessly into the distance, connected in a sweeping, undulating pattern. The sky is a clear, vivid blue with no clouds in sight. Far off, a few scattered oases break the monotony of the sand with patches of green. The environment is open and vast, with visibility extending for miles, but there are no paths or exits. Important elements include the relentless sun overhead and the distant oases. Create one realistic flat 2D landscape image, single camera view, natural perspective, 3:2 composition, not panoramic, not equirectangular, no fisheye distortion, no split view, no frame, no text, no watermark.",
+  "sound_prompt": "The soft, continuous sound of wind gently blowing across the sand dunes, creating a low, whispering ambience. No voices, no vehicle sounds, no sudden loud events. No static, no hiss, no white noise, no distortion, no crackle, no clipping. Soft, clean recording. No static, no hiss, no white noise, no distortion, no crackle, no clipping.",
+  "music_prompt": "Sparse non-vocal ambient instrumental music with a slow tempo, featuring soft, sustained synth pads and gentle, airy textures. The music is low intensity, creating a subtle and expansive atmosphere. No vocals, no lyrics, no percussion hits, no sudden dramatic changes.",
+  "image_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260805140959\\image.png",
+  "sound_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260805140959\\sound_effect.mp3",
+  "music_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260805140959\\music.mp3"
+}

@@ -1,0 +1,9 @@
+{
+  "image_model": "gpt-image-2",
+  "flat_image_prompt": "The scene shows a narrow, winding, twisting unpaved dirt path, winding sharply back and forth as it recedes from the foreground toward the horizon, with clearly visible S-curves and switchbacks, its vanishing point shifting with each turn, shown in a naturalistic centered perspective. A modest, sparse number of trees stand along each side of the path -- not a dense or continuous row -- spaced well apart, canopies visible against the sky, thinning out further toward the horizon. The path and its flanking trees are the only structural elements in the scene -- no forks, no side paths, no clearings, no other landmarks. The onset of early winter is marked by bare branches as a cold thunderstorm rolls through, echoing with distant rumbles. The dramatic sky crackles with lightning, illuminating the path in stark, short-lived contrasts of light and shadow. Stars are visible in the storm's breaks, creating a surreal blend of celestial light and electric flashes. Create one realistic flat 2D landscape image, single camera view, natural perspective, 3:2 composition, not panoramic, not equirectangular, no fisheye distortion, no split view, no frame, no text, no watermark.",
+  "sound_prompt": "steady rain with distant, low rolling thunder -- no sharp cracks Soft, clean recording. No static, no hiss, no white noise, no distortion, no crackle, no clipping.",
+  "music_prompt": "disabled",
+  "image_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260811161625\\image.png",
+  "sound_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260811161625\\sound_effect.mp3",
+  "music_path": null
+}

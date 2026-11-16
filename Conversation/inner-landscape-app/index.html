@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Inner Landscape Co-Creation</title>
+    <link rel="stylesheet" href="./style.css?v=20260730-fullscreen-experience" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <div class="brand">AI Inner Landscape Co-Creation</div>
+          <p class="tagline">Turn a present feeling into a place you can see and enter.</p>
+        </div>
+        <nav class="top-actions" aria-label="Global actions">
+          <a class="icon-button" href="./record.html" title="Generation History" aria-label="Generation History">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/></svg>
+          </a>
+          <button class="icon-button" id="historyBtn" title="History" aria-label="History">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/><path d="M12 7v5l3 2"/></svg>
+          </button>
+          <button class="icon-button" id="helpBtn" title="Help" aria-label="Help">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.1 9a3 3 0 1 1 5.8 1c-.5 1.2-1.7 1.7-2.4 2.6-.4.5-.5.9-.5 1.4"/><path d="M12 18h.01"/><circle cx="12" cy="12" r="9"/></svg>
+          </button>
+          <button class="icon-button" id="settingsBtn" title="Settings" aria-label="Settings">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.6-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3h.1A1.7 1.7 0 0 0 10 3.1V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.6h.1a1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9v.1a1.7 1.7 0 0 0 1.6 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg>
+          </button>
+        </nav>
+      </header>
+
+      <main>
+        <section class="screen home-screen" id="homeScreen">
+          <div class="home-copy">
+            <h1>Create Your Inner Landscape</h1>
+            <p>AI helps you turn a word into a complete environment through a few simple questions.</p>
+            <div class="language-choice" aria-label="Choose Language">
+              <label for="homeLanguageSelect">Language</label>
+              <select id="homeLanguageSelect">
+                <option value="zh-CN">Chinese</option>
+                <option value="en-US" selected>English</option>
+              </select>
+            </div>
+            <div class="home-actions">
+              <button class="primary-button" id="startBtn">Start Creating</button>
+              <label class="secondary-button" for="projectFile">Open Project</label>
+              <input id="projectFile" type="file" accept=".json,application/json" hidden />
+              <button class="ghost-button" id="debugSkipBtn" type="button">Debug: Skip to Generation Screen</button>
+            </div>
+          </div>
+          <div class="principles" aria-label="System principles">
+            <span>There is no correct answer</span>
+            <span>The system does not diagnose you</span>
+            <span>You can say you are unsure</span>
+            <span>The scene meaning is yours</span>
+          </div>
+        </section>
+
+        <section class="screen intro-screen hidden" id="introScreen">
+          <div class="intro-copy">
+            <p id="introText"></p>
+            <div class="intro-actions">
+              <button class="primary-button" id="readyBtn">I'm Ready</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="screen creator-screen hidden" id="creatorScreen">
+          <aside class="scene-panel live-archive-panel" aria-label="Current scene archive">
+            <div class="panel-heading">
+              <div>
+                <h2 id="liveArchiveTitle">Current Archive</h2>
+                <p id="liveArchiveDesc">Your answers will gradually form a visible scene outline here.</p>
+              </div>
+            </div>
+            <p class="archive-focus-text" id="archiveFocusText"></p>
+            <div class="scene-fields live-archive-fields" id="liveArchiveFields"></div>
+          </aside>
+          <section class="chat-panel" aria-label="AI dialogue">
+            <div class="chat-header">
+              <div>
+                <h2>Creation Dialogue</h2>
+                <p>Answer only what you want to answer. AI will organize the scene archive in the background.</p>
+              </div>
+              <div class="chat-tools">
+                <button class="secondary-button" id="musicToggleBtn" type="button">Music</button>
+                <button class="secondary-button hidden" id="openConfirmBtn">View Archive</button>
+                <button class="ghost-button" id="resetBtn">Restart</button>
+              </div>
+            </div>
+            <div class="messages" id="messages" aria-live="polite"></div>
+            <form class="composer" id="messageForm">
+              <textarea id="messageInput" rows="3" placeholder="Write whatever comes to mind first. It does not need to be complete."></textarea>
+              <div class="composer-actions">
+                <button class="secondary-button" type="button" id="backBtn">Back</button>
+                <button class="primary-button" type="submit">Send</button>
+              </div>
+            </form>
+          </section>
+        </section>
+
+        <section class="screen confirm-screen hidden" id="confirmScreen">
+          <div class="confirm-header">
+            <div>
+              <h1>Confirm Your Inner Landscape</h1>
+              <p>Review your landscape. You can edit, delete, lock, or mark the meaning of each field.</p>
+            </div>
+            <button class="secondary-button" id="backToCreatorBtn">Back to Chat</button>
+          </div>
+          <div class="confirm-grid" id="confirmGrid"></div>
+          <div class="output-actions">
+            <button class="primary-button" id="confirmExportBtn">Generate Files</button>
+            <button class="secondary-button hidden" id="downloadResultBtn">Download Prompt and Log</button>
+            <button class="secondary-button hidden" id="generate2dBtn">Generate 2D Experience</button>
+            <button class="secondary-button hidden" id="generateVrBtn">Generate VR Experience</button>
+            <button class="primary-button hidden" id="startExperienceBtn">Start Experience</button>
+          </div>
+          <div class="output-preview hidden" id="outputPreview"></div>
+          <p class="status-text hidden" id="vrExperienceStatus"></p>
+          <div class="experience-preview hidden" id="experiencePreview"></div>
+        </section>
+
+        <section class="screen experience-screen hidden" id="experienceScreen">
+          <img id="experienceImage" alt="Generated 2D inner landscape" />
+          <audio id="experienceSound" loop></audio>
+          <audio id="experienceMusic" loop></audio>
+          <div class="experience-controls">
+            <button class="secondary-button" id="exitExperienceBtn">Exit Experience</button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="drawer-backdrop hidden" id="drawerBackdrop"></div>
+    <aside class="settings-drawer hidden" id="settingsDrawer" aria-label="Settings">
+      <div class="drawer-header">
+        <div>
+          <h2>Settings</h2>
+          <p>API keys are kept only in this browser session.</p>
+        </div>
+        <button class="icon-button" id="closeSettingsBtn" title="Close Settings" aria-label="Close Settings">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      </div>
+
+      <section class="settings-section">
+        <h3>Language</h3>
+        <label for="languageSelect">Interface and Dialogue Language</label>
+        <select id="languageSelect">
+          <option value="zh-CN">Chinese</option>
+          <option value="en-US" selected>English</option>
+        </select>
+      </section>
+
+      <section class="settings-section">
+        <h3>API Settings</h3>
+        <label for="apiKeyInput">OpenAI API Key</label>
+        <div class="inline-field">
+          <input id="apiKeyInput" type="password" autocomplete="off" placeholder="sk-..." />
+          <button class="icon-button compact" id="toggleKeyBtn" title="Show or hide" aria-label="Show or hide API key">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>
+          </button>
+        </div>
+        <div class="button-row">
+          <button class="secondary-button" id="testApiBtn">Test Connection</button>
+          <button class="ghost-button" id="clearApiBtn">Clear</button>
+        </div>
+        <p class="status-text" id="apiStatus">Not set</p>
+        <label for="elevenLabsKeyInput">ElevenLabs API Key</label>
+        <input id="elevenLabsKeyInput" type="password" autocomplete="off" placeholder="xi-..." />
+        <label for="soundProviderSelect">Sound Effect Provider</label>
+        <select id="soundProviderSelect">
+          <option value="elevenlabs">ElevenLabs</option>
+          <option value="falai">fal.ai (Stable Audio)</option>
+        </select>
+        <label for="falKeyInput">fal.ai API Key</label>
+        <input id="falKeyInput" type="password" autocomplete="off" placeholder="fal_..." />
+        <p class="notice">The API key is only used to call the selected model. Use it only in a local research environment.</p>
+      </section>
+
+      <section class="settings-section">
+        <h3>Model Settings</h3>
+        <label for="modelSelect">Dialogue Model</label>
+        <select id="modelSelect">
+          <option value="gpt-4o">4o</option>
+          <option value="gpt-4.1">4.1</option>
+          <option value="gpt-4.1-mini">4.1 mini</option>
+          <option value="gpt-5.4">5.4</option>
+          <option value="gpt-5.4-mini">5.4 mini</option>
+          <option value="gpt-5.5">5.5</option>
+        </select>
+        <label for="temperatureInput">Temperature</label>
+        <div class="range-row">
+          <input id="temperatureRange" type="range" min="0" max="1" step="0.01" value="0.4" />
+          <input id="temperatureInput" type="text" inputmode="decimal" pattern="^0(\\.\\d+)?$|^1(\\.0+)?$" value="0.4" />
+        </div>
+        <p class="notice">Use 0.3-0.5 for stable extraction. Unsupported parameters are omitted automatically.</p>
+      </section>
+
+      <section class="settings-section">
+        <h3>Generation Settings</h3>
+        <label><input id="englishPromptCheck" type="checkbox" checked /> Generate English image and sound prompts</label>
+        <label><input id="strictNoPsychCheck" type="checkbox" checked /> Block psychological diagnosis wording</label>
+      </section>
+
+      <section class="settings-section">
+        <h3>File Save Settings</h3>
+        <label for="outputFolderInput">Project Save Location</label>
+        <input id="outputFolderInput" value="Documents/InnerLandscape/" />
+        <div class="button-row">
+          <button class="secondary-button" id="restoreFolderBtn">Restore Default</button>
+        </div>
+        <p class="notice">Save prompts and logs through the local server or download them in the browser.</p>
+      </section>
+    </aside>
+
+    <dialog id="infoDialog">
+      <form method="dialog">
+        <h2 id="dialogTitle">Information</h2>
+        <div id="dialogBody"></div>
+        <button class="primary-button">OK</button>
+      </form>
+    </dialog>
+
+    <script src="./app.js?v=20260730-fullscreen-experience"></script>
+  </body>
+</html>

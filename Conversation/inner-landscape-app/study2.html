@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study 2 · SAM Questionnaire</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./study2.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <div class="brand">Study 2 · SAM Questionnaire</div>
+          <p class="tagline">Choose your participant number and complete 24 experience ratings in order.</p>
+        </div>
+        <nav class="top-actions" aria-label="Global actions">
+          <label class="test-mode-toggle">
+            <input type="checkbox" id="testModeToggle" />
+            Test Mode
+          </label>
+          <a class="icon-button" href="./study2-results.html" title="View Results" aria-label="View Results">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19h4v-7H4v7zM10 19h4V9h-4v10zM16 19h4V5h-4v14z" fill="currentColor" stroke="none" /></svg>
+          </a>
+        </nav>
+      </header>
+
+      <p class="test-mode-banner hidden" id="testModeBanner">Test mode · Submissions are stored separately from participant data</p>
+
+      <section class="screen select-screen" id="selectScreen">
+        <h1>Choose Participant</h1>
+        <p class="notice">Choose your participant number. Your session resumes from your saved progress.</p>
+        <div class="participant-grid" id="participantGrid"></div>
+      </section>
+
+      <section class="screen view-screen hidden" id="viewScreen">
+        <img id="viewImage" class="hidden" alt="" />
+        <canvas id="viewCanvas" class="hidden"></canvas>
+        <audio id="viewAudio" loop></audio>
+        <p class="panorama-hint hidden" id="viewPanoramaHint">Drag to look around · Scroll to zoom</p>
+
+        <div class="view-overlay" id="viewStartOverlay">
+          <div class="view-overlay-card">
+            <p class="view-progress" id="viewProgressStart"></p>
+            <button class="primary-button" id="viewStartBtn" type="button">Start</button>
+          </div>
+        </div>
+
+        <div class="view-controls hidden" id="viewControls">
+          <span class="view-progress-tag" id="viewProgressTag"></span>
+          <button class="primary-button hidden" id="viewEnterXrBtn" type="button">View in VR Headset</button>
+          <button class="secondary-button" id="viewFinishBtn" type="button">Finish</button>
+        </div>
+      </section>
+
+      <section class="screen sam-screen hidden" id="samScreen">
+        <div class="sam-header">
+          <h2>SAM</h2>
+          <span class="sam-participant-tag" id="samProgressTag"></span>
+        </div>
+        <div class="sam-matrix" id="samMatrix"></div>
+        <div class="sam-actions">
+          <button class="primary-button" id="submitSamBtn" type="button" disabled>Submit and Continue</button>
+        </div>
+        <p class="status-text" id="samStatus"></p>
+      </section>
+
+      <section class="screen done-screen hidden" id="completeScreen">
+        <h1>All Done</h1>
+        <p class="notice" id="completeMessage"></p>
+        <div class="button-row">
+          <button class="primary-button" id="completeBackBtn" type="button">Back to Participants</button>
+          <a class="secondary-button" href="./study2-results.html">View Results</a>
+        </div>
+      </section>
+    </div>
+
+    <script src="./panorama-viewer.js"></script>
+    <script src="./study2.js"></script>
+  </body>
+</html>

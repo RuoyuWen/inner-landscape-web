@@ -1,0 +1,9 @@
+{
+  "image_model": "gpt-image-2",
+  "flat_image_prompt": "A tranquil beach scene in summer at dusk, with a clear sky and soft lighting from the setting sun casting warm hues across the open horizon. The expansive sandy shore stretches uninterrupted, meeting gentle ocean waves that lap rhythmically against the coast. The sun, a prominent feature, hovers near the horizon, painting the sky in shades of orange and pink. No paths, no structures, just the vastness of the sea and sky. Create one realistic flat 2D landscape image, single camera view, natural perspective, 3:2 composition, not panoramic, not equirectangular, no fisheye distortion, no split view, no frame, no text, no watermark.",
+  "sound_prompt": "Gentle ocean waves continuously lapping against the shore, creating a rhythmic and soothing soundscape. No voices, no vehicle sounds, no sudden loud events.",
+  "music_prompt": "Soft, ambient instrumental music with a slow tempo, featuring gentle synth pads and light, airy textures. The music is calming and unobtrusive, enhancing the serene atmosphere without drawing attention. No vocals, no lyrics, no percussion, no sudden changes.",
+  "image_path": "D:\\Unreal\\vrst\\Conversation\\Experience\\experience_20260730162526\\image.png",
+  "sound_path": "D:\\Unreal\\vrst\\Conversation\\Experience\\experience_20260730162526\\sound_effect.mp3",
+  "music_path": "D:\\Unreal\\vrst\\Conversation\\Experience\\experience_20260730162526\\music.mp3"
+}

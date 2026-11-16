@@ -1,0 +1,9 @@
+{
+  "image_model": "gpt-image-2",
+  "flat_image_prompt": "A serene pine forest by the seaside during a summer evening, bathed in warm orange-red sunset light. A gentle breeze rustles through the pine needles, and the open landscape offers a clear view of the distant horizon over the sea. A smooth rock, polished by the ocean, rests near a small path leading to the water's edge. The sky is clear, and the environment is devoid of crowds or buildings.      No people, no buildings. Create one realistic flat 2D landscape image, single camera view, natural perspective, 3:2 composition, not panoramic, not equirectangular, no fisheye distortion, no split view, no frame, no text, no watermark.",
+  "sound_prompt": "Soft, gentle, low-intensity background ambience: the continuous sound of ocean waves lapping against the shore and the gentle rustling of wind through the pine needles. No voices, no vehicle sounds, no sudden loud events. No static, no hiss, no white noise, no distortion, no crackle, no clipping. Soft, clean recording. No static, no hiss, no white noise, no distortion, no crackle, no clipping.",
+  "music_prompt": "disabled",
+  "image_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260805210228\\image.png",
+  "sound_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260805210228\\sound_effect.wav",
+  "music_path": null
+}

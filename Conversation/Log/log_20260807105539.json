@@ -1,0 +1,44 @@
+{
+  "project_id": "PATH_20260807105539",
+  "created_at": "2026-08-06T22:55:43.331Z",
+  "mode": "path-bubble-picker",
+  "language": "zh-CN",
+  "selections": {
+    "season": {
+      "label": "深秋",
+      "path": [
+        "autumn",
+        "autumn_late"
+      ]
+    },
+    "weather": {
+      "label": "阴沉",
+      "path": [
+        "overcast",
+        "overcast_gloomy"
+      ]
+    },
+    "time": {
+      "label": "下午",
+      "path": [
+        "daytime",
+        "daytime_afternoon"
+      ]
+    },
+    "light": {
+      "label": "朦胧微光",
+      "path": [
+        "soft",
+        "soft_hazy"
+      ]
+    },
+    "road": {
+      "course": "gentle_bend",
+      "width": "narrow",
+      "surface": "stone",
+      "custom": false,
+      "label": "微微蜿蜒 · 狭窄 · 石板"
+    }
+  },
+  "title": "A Road Through Autumn Twilight"
+}

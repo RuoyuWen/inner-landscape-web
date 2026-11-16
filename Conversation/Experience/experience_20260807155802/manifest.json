@@ -1,0 +1,9 @@
+{
+  "image_model": "gpt-image-2",
+  "flat_image_prompt": "The scene shows a modestly wide, winding, twisting gravel path, winding sharply back and forth as it recedes from the foreground toward the horizon, with clearly visible S-curves and switchbacks, its vanishing point shifting with each turn, shown in a naturalistic centered perspective. A modest, sparse number of trees stand along each side of the path -- not a dense or continuous row -- spaced well apart, canopies visible against the sky, thinning out further toward the horizon. The path and its flanking trees are the only structural elements in the scene -- no forks, no side paths, no clearings, no other landmarks. The peak of summer brings a sudden thunderstorm, with bursts of rain creating a fresh, earthy scent. Thunder rumbles in the distance while lightning briefly illuminates the landscape. Strong contrasts in the noon light cast deep shadows alongside the path, highlighting every curve and twist. Create one realistic flat 2D landscape image, single camera view, natural perspective, 3:2 composition, not panoramic, not equirectangular, no fisheye distortion, no split view, no frame, no text, no watermark.",
+  "sound_prompt": "steady rain with distant, low rolling thunder -- no sharp cracks Soft, clean recording. No static, no hiss, no white noise, no distortion, no crackle, no clipping.",
+  "music_prompt": "disabled",
+  "image_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260807155802\\image.png",
+  "sound_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260807155802\\sound_effect.mp3",
+  "music_path": null
+}

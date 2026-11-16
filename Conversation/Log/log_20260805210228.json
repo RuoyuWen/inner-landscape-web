@@ -1,0 +1,370 @@
+{
+  "project_id": "IL_20260805210228",
+  "created_at": "2026-08-05T09:02:28.250Z",
+  "updated_at": "2026-08-05T09:02:28.250Z",
+  "language": "zh-CN",
+  "model_configuration": {
+    "provider": "openai",
+    "model": "gpt-4o",
+    "temperature": 0.4
+  },
+  "prompt_generation_source": "openai",
+  "prompt_generation_detail": {
+    "title": "Tranquil Pine Forest by the Sea",
+    "prompt1_environment_360": "A serene pine forest by the seaside during a summer evening, bathed in warm orange-red sunset light. A gentle breeze rustles through the pine needles, and the open landscape offers a clear view of the distant horizon over the sea. A smooth rock, polished by the ocean, rests near a small path leading to the water's edge. The sky is clear, and the environment is devoid of crowds or buildings. Realistic 360-degree equirectangular panoramic image, seamless full spherical environment, immersive VR-ready panorama, consistent horizon, no frame, no text, no watermark. No people, no buildings.",
+    "prompt2_sound": "Soft, gentle, low-intensity background ambience: the continuous sound of ocean waves lapping against the shore and the gentle rustling of wind through the pine needles. No voices, no music, no vehicle sounds, no sudden loud events. No static, no hiss, no white noise, no distortion, no crackle, no clipping.",
+    "prompt3_music": "Gentle non-vocal ambient instrumental music for a tranquil seaside pine forest at dusk. Slow tempo, soft sustained strings, light acoustic guitar, subtle warm texture, low intensity, no vocals, no lyrics, no percussion hits, no sudden dramatic changes.",
+    "negative_prompt": "people, buildings, static, hiss, white noise, distortion, crackle, clipping",
+    "scene_tags": [
+      "pine forest",
+      "seaside",
+      "sunset",
+      "summer",
+      "tranquil"
+    ]
+  },
+  "scene": {
+    "feeling_keyword": {
+      "value": "平静",
+      "status": "confirmed",
+      "source": "user_explicit",
+      "confidence": 1,
+      "locked": false,
+      "needs_follow_up": false
+    },
+    "scene_basis": {
+      "place": {
+        "value": "海边的松树林",
+        "status": "confirmed",
+        "source": "user_explicit",
+        "confidence": 1,
+        "locked": false,
+        "needs_follow_up": false
+      },
+      "season": {
+        "value": "夏天",
+        "status": "confirmed",
+        "source": "user_explicit",
+        "confidence": 1,
+        "locked": false,
+        "needs_follow_up": false
+      },
+      "time_of_day": {
+        "value": "黄昏",
+        "status": "confirmed",
+        "source": "user_explicit",
+        "confidence": 1,
+        "locked": false,
+        "needs_follow_up": false
+      }
+    },
+    "atmosphere": {
+      "weather": {
+        "value": [
+          "微风",
+          "晴朗"
+        ],
+        "status": "confirmed",
+        "source": "user_explicit",
+        "confidence": 1,
+        "locked": false,
+        "needs_follow_up": false
+      },
+      "lighting": {
+        "value": "温暖的橙红色夕阳光线",
+        "status": "confirmed",
+        "source": "user_explicit",
+        "confidence": 1,
+        "locked": false,
+        "needs_follow_up": false
+      }
+    },
+    "soundscape": {
+      "sound_sources": {
+        "value": [
+          "海浪声",
+          "风吹过松针的声音"
+        ],
+        "status": "confirmed",
+        "source": "user_explicit",
+        "confidence": 1,
+        "locked": false,
+        "needs_follow_up": false
+      },
+      "overall_sound_level": {
+        "value": "安静",
+        "status": "confirmed",
+        "source": "user_explicit",
+        "confidence": 1,
+        "locked": false,
+        "needs_follow_up": false
+      }
+    },
+    "spatial_structure": {
+      "openness": {
+        "value": "开阔，能看到很远的海平线",
+        "status": "confirmed",
+        "source": "user_explicit",
+        "confidence": 1,
+        "locked": false,
+        "needs_follow_up": false
+      },
+      "visibility": {
+        "value": "视野开阔，没有遮挡",
+        "status": "confirmed",
+        "source": "user_explicit",
+        "confidence": 1,
+        "locked": false,
+        "needs_follow_up": false
+      },
+      "path_or_exit": {
+        "value": "有一条通向海边的小路",
+        "status": "confirmed",
+        "source": "user_explicit",
+        "confidence": 1,
+        "locked": false,
+        "needs_follow_up": false
+      },
+      "connectivity": {
+        "value": "整片连在一起，没有分区",
+        "status": "confirmed",
+        "source": "user_explicit",
+        "confidence": 1,
+        "locked": false,
+        "needs_follow_up": false
+      }
+    },
+    "important_details": {
+      "important_objects": {
+        "value": [
+          {
+            "name": "一块被海水打磨光滑的礁石",
+            "position": "",
+            "meaning_type": "personal_meaning",
+            "user_explanation": null
+          }
+        ],
+        "status": "confirmed",
+        "source": "user_edit",
+        "confidence": 1,
+        "locked": false,
+        "needs_follow_up": false
+      },
+      "required_elements": {
+        "value": [
+          "海"
+        ],
+        "status": "confirmed",
+        "source": "user_explicit",
+        "confidence": 1,
+        "locked": false,
+        "needs_follow_up": false
+      },
+      "excluded_elements": {
+        "value": [
+          "人群",
+          "建筑"
+        ],
+        "status": "confirmed",
+        "source": "user_explicit",
+        "confidence": 1,
+        "locked": false,
+        "needs_follow_up": false
+      }
+    },
+    "ue_generation_hints": {
+      "location_id": "海边的松树林",
+      "season_id": "夏天",
+      "time_id": "黄昏",
+      "weather_ids": [
+        "微风",
+        "晴朗"
+      ],
+      "sound_ids": [
+        "海浪声",
+        "风吹过松针的声音"
+      ],
+      "object_ids": [
+        "一块被海水打磨光滑的礁石"
+      ],
+      "excluded_ids": [
+        "人群",
+        "建筑"
+      ]
+    }
+  },
+  "conversation": [],
+  "research_trace": {
+    "raw_user_responses": [],
+    "field_revision_history": [
+      {
+        "field": "feeling_keyword",
+        "old_value": "",
+        "new_value": "平静",
+        "source": "user_explicit",
+        "status": "confirmed",
+        "timestamp": "2026-08-05T09:02:26.609Z",
+        "user_confirmed": true
+      },
+      {
+        "field": "place",
+        "old_value": "",
+        "new_value": "海边的松树林",
+        "source": "user_explicit",
+        "status": "confirmed",
+        "timestamp": "2026-08-05T09:02:26.609Z",
+        "user_confirmed": true
+      },
+      {
+        "field": "season",
+        "old_value": "",
+        "new_value": "夏天",
+        "source": "user_explicit",
+        "status": "confirmed",
+        "timestamp": "2026-08-05T09:02:26.609Z",
+        "user_confirmed": true
+      },
+      {
+        "field": "time_of_day",
+        "old_value": "",
+        "new_value": "黄昏",
+        "source": "user_explicit",
+        "status": "confirmed",
+        "timestamp": "2026-08-05T09:02:26.610Z",
+        "user_confirmed": true
+      },
+      {
+        "field": "weather",
+        "old_value": [],
+        "new_value": [
+          "微风",
+          "晴朗"
+        ],
+        "source": "user_explicit",
+        "status": "confirmed",
+        "timestamp": "2026-08-05T09:02:26.610Z",
+        "user_confirmed": true
+      },
+      {
+        "field": "lighting",
+        "old_value": "",
+        "new_value": "温暖的橙红色夕阳光线",
+        "source": "user_explicit",
+        "status": "confirmed",
+        "timestamp": "2026-08-05T09:02:26.610Z",
+        "user_confirmed": true
+      },
+      {
+        "field": "sound_sources",
+        "old_value": [],
+        "new_value": [
+          "海浪声",
+          "风吹过松针的声音"
+        ],
+        "source": "user_explicit",
+        "status": "confirmed",
+        "timestamp": "2026-08-05T09:02:26.610Z",
+        "user_confirmed": true
+      },
+      {
+        "field": "overall_sound_level",
+        "old_value": "",
+        "new_value": "安静",
+        "source": "user_explicit",
+        "status": "confirmed",
+        "timestamp": "2026-08-05T09:02:26.610Z",
+        "user_confirmed": true
+      },
+      {
+        "field": "openness",
+        "old_value": "",
+        "new_value": "开阔，能看到很远的海平线",
+        "source": "user_explicit",
+        "status": "confirmed",
+        "timestamp": "2026-08-05T09:02:26.610Z",
+        "user_confirmed": true
+      },
+      {
+        "field": "visibility",
+        "old_value": "",
+        "new_value": "视野开阔，没有遮挡",
+        "source": "user_explicit",
+        "status": "confirmed",
+        "timestamp": "2026-08-05T09:02:26.610Z",
+        "user_confirmed": true
+      },
+      {
+        "field": "path_or_exit",
+        "old_value": "",
+        "new_value": "有一条通向海边的小路",
+        "source": "user_explicit",
+        "status": "confirmed",
+        "timestamp": "2026-08-05T09:02:26.610Z",
+        "user_confirmed": true
+      },
+      {
+        "field": "connectivity",
+        "old_value": "",
+        "new_value": "整片连在一起，没有分区",
+        "source": "user_explicit",
+        "status": "confirmed",
+        "timestamp": "2026-08-05T09:02:26.610Z",
+        "user_confirmed": true
+      },
+      {
+        "field": "important_objects",
+        "old_value": [],
+        "new_value": [
+          "一块被海水打磨光滑的礁石"
+        ],
+        "source": "user_explicit",
+        "status": "confirmed",
+        "timestamp": "2026-08-05T09:02:26.610Z",
+        "user_confirmed": true
+      },
+      {
+        "field": "required_elements",
+        "old_value": [],
+        "new_value": [
+          "海"
+        ],
+        "source": "user_explicit",
+        "status": "confirmed",
+        "timestamp": "2026-08-05T09:02:26.610Z",
+        "user_confirmed": true
+      },
+      {
+        "field": "excluded_elements",
+        "old_value": [],
+        "new_value": [
+          "人群",
+          "建筑"
+        ],
+        "source": "user_explicit",
+        "status": "confirmed",
+        "timestamp": "2026-08-05T09:02:26.610Z",
+        "user_confirmed": true
+      },
+      {
+        "field": "important_objects",
+        "old_value": [
+          "一块被海水打磨光滑的礁石"
+        ],
+        "new_value": [
+          {
+            "name": "一块被海水打磨光滑的礁石",
+            "position": "",
+            "meaning_type": "personal_meaning",
+            "user_explanation": null
+          }
+        ],
+        "source": "user_edit",
+        "status": "confirmed",
+        "timestamp": "2026-08-05T09:02:28.250Z",
+        "user_confirmed": true
+      }
+    ],
+    "checklist_history": [],
+    "focus_counts": {}
+  }
+}

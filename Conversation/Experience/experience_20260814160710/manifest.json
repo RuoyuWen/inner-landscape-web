@@ -1,0 +1,9 @@
+{
+  "image_model": "gpt-image-2",
+  "flat_image_prompt": "The scene shows a modestly wide, gently winding unpaved dirt path, curving gently from side to side as it recedes from the foreground toward the horizon, its vanishing point shifting subtly with the bend, shown in a naturalistic centered perspective. A modest, sparse number of trees stand along each side of the path -- not a dense or continuous row -- spaced well apart, canopies visible against the sky, thinning out further toward the horizon. The path and its flanking trees are the only structural elements in the scene -- no forks, no side paths, no clearings, no other landmarks. It's early autumn, and the air is crisp and refreshing. The sky is adorned with a few wispy clouds, gently drifting past. The warm, orange-hued sunlight bathes the scene in a golden glow, highlighting the vibrant colors of the season. Create one realistic flat 2D landscape image, single camera view, natural perspective, 3:2 composition, not panoramic, not equirectangular, no fisheye distortion, no split view, no frame, no text, no watermark.",
+  "sound_prompt": "very quiet; at most a faint breeze Soft, clean recording. No static, no hiss, no white noise, no distortion, no crackle, no clipping.",
+  "music_prompt": "disabled",
+  "image_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260814160710\\image.png",
+  "sound_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260814160710\\sound_effect.mp3",
+  "music_path": null
+}

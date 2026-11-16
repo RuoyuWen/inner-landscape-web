@@ -1,0 +1,43 @@
+{
+  "project_id": "PATH_20260807172324",
+  "created_at": "2026-08-07T05:23:25.854Z",
+  "mode": "path-bubble-picker",
+  "language": "zh-CN",
+  "selections": {
+    "season": {
+      "label": "晚冬",
+      "path": [
+        "winter",
+        "winter_late"
+      ]
+    },
+    "weather": {
+      "label": "小雪纷飞",
+      "path": [
+        "snow",
+        "snow_light"
+      ]
+    },
+    "time": {
+      "label": "夜晚",
+      "path": [
+        "night"
+      ]
+    },
+    "light": {
+      "label": "朦胧微光",
+      "path": [
+        "soft",
+        "soft_hazy"
+      ]
+    },
+    "road": {
+      "course": "gentle_bend",
+      "width": "narrow",
+      "surface": "dirt",
+      "custom": false,
+      "label": "微微蜿蜒 · 狭窄 · 泥土"
+    }
+  },
+  "title": "Whispering Winter Path"
+}

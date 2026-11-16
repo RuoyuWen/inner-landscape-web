@@ -1,0 +1,44 @@
+{
+  "project_id": "PATH_20260807144724",
+  "created_at": "2026-08-07T02:47:30.083Z",
+  "mode": "path-bubble-picker",
+  "language": "zh-CN",
+  "selections": {
+    "season": {
+      "label": "仲秋",
+      "path": [
+        "autumn",
+        "autumn_mid"
+      ]
+    },
+    "weather": {
+      "label": "晴朗且微风",
+      "path": [
+        "custom"
+      ],
+      "custom": true
+    },
+    "time": {
+      "label": "晨曦微露",
+      "path": [
+        "dawn",
+        "dawn_firstlight"
+      ]
+    },
+    "light": {
+      "label": "朦胧微光",
+      "path": [
+        "soft",
+        "soft_hazy"
+      ]
+    },
+    "road": {
+      "course": "winding",
+      "width": "narrow",
+      "surface": "gravel",
+      "custom": false,
+      "label": "蜿蜒曲折 · 狭窄 · 碎石"
+    }
+  },
+  "title": "Autumn Dawn Pathway"
+}

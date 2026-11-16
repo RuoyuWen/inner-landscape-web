@@ -1,0 +1,9 @@
+{
+  "image_model": "gpt-image-2",
+  "flat_image_prompt": "A realistic winter lakeside at night, enveloped in complete darkness with no visible light sources. The cold wind sweeps across the frozen surface, creating an enclosed, intimate atmosphere. The snow-covered landscape is indistinct, with no visible paths or exits, enhancing the sense of isolation. The scene is devoid of any objects or structures, focusing solely on the natural elements. No people, no artificial lights, and no bright colors. Create one realistic flat 2D landscape image, single camera view, natural perspective, 3:2 composition, not panoramic, not equirectangular, no fisheye distortion, no split view, no frame, no text, no watermark.",
+  "sound_prompt": "Soft, gentle sound of snow falling continuously, blending with the low, distant whisper of the cold wind. No voices, no vehicle sounds, no sudden loud events. No static, no hiss, no white noise, no distortion, no crackle, no clipping. Soft, clean recording. No static, no hiss, no white noise, no distortion, no crackle, no clipping.",
+  "music_prompt": "Sparse, non-vocal ambient instrumental music with a slow tempo. Soft, sustained pads and subtle, cold textures create a low-intensity atmosphere. No vocals, no lyrics, no percussion hits, no sudden dramatic changes.",
+  "image_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260805114615\\image.png",
+  "sound_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260805114615\\sound_effect.mp3",
+  "music_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260805114615\\music.mp3"
+}

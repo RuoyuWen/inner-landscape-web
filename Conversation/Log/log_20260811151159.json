@@ -1,0 +1,44 @@
+{
+  "project_id": "PATH_20260811151159",
+  "created_at": "2026-08-11T03:12:00.867Z",
+  "mode": "path-bubble-picker",
+  "language": "zh-CN",
+  "selections": {
+    "season": {
+      "label": "仲秋",
+      "path": [
+        "autumn",
+        "autumn_mid"
+      ]
+    },
+    "weather": {
+      "label": "微风",
+      "path": [
+        "wind",
+        "wind_breeze"
+      ]
+    },
+    "time": {
+      "label": "日落时分",
+      "path": [
+        "dusk",
+        "dusk_sunset"
+      ]
+    },
+    "light": {
+      "label": "温暖橙光",
+      "path": [
+        "soft",
+        "soft_amber"
+      ]
+    },
+    "road": {
+      "course": "straight",
+      "width": "medium",
+      "surface": "asphalt",
+      "custom": false,
+      "label": "笔直向前 · 适中 · 柏油"
+    }
+  },
+  "title": "Autumn Road at Sunset"
+}

@@ -1,0 +1,44 @@
+{
+  "project_id": "PATH_20260806171050",
+  "created_at": "2026-08-06T05:10:59.096Z",
+  "mode": "path-bubble-picker",
+  "language": "zh-CN",
+  "selections": {
+    "season": {
+      "label": "仲春",
+      "path": [
+        "spring",
+        "spring_mid"
+      ]
+    },
+    "weather": {
+      "label": "细雨",
+      "path": [
+        "rain",
+        "rain_light"
+      ]
+    },
+    "time": {
+      "label": "深夜",
+      "path": [
+        "night",
+        "night_late"
+      ]
+    },
+    "light": {
+      "label": "深沉黑暗",
+      "path": [
+        "dim",
+        "dim_dark"
+      ]
+    },
+    "road": {
+      "course": "winding",
+      "width": "narrow",
+      "surface": "asphalt",
+      "custom": false,
+      "label": "蜿蜒曲折 · 狭窄 · 柏油"
+    }
+  },
+  "title": "Midnight Rain Path"
+}

@@ -1,0 +1,9 @@
+{
+  "image_model": "gpt-image-2",
+  "flat_image_prompt": "A winding road gently extends into the distance, bordered by towering trees bathed in the glow of warm candlelight. Despite the height of summer, delicate snowflakes lazily drift down, settling on the leaves and blanketing the path. The soft hues of dusk paint the sky with muted purples and blues, creating a serene and mystical atmosphere. The entire scene is captured as a  designed to be an  with a  and a  free of frames, text, or watermarks. Create one realistic flat 2D landscape image, single camera view, natural perspective, 3:2 composition, not panoramic, not equirectangular, no fisheye distortion, no split view, no frame, no text, no watermark.",
+  "sound_prompt": "The faint whisper of wind rustling through the leaves, accompanied by the delicate patter of snowflakes landing gently against the foliage. no voices, no vehicle sounds, no sudden loud events, no static, no hiss, no white noise, no distortion, no crackle, no clipping. Soft, clean recording. No static, no hiss, no white noise, no distortion, no crackle, no clipping.",
+  "music_prompt": "disabled",
+  "image_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260805224253\\image.png",
+  "sound_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260805224253\\sound_effect.mp3",
+  "music_path": null
+}

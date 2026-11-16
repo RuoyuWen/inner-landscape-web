@@ -1,0 +1,208 @@
+.record-main {
+  display: grid;
+  grid-template-columns: minmax(260px, 340px) 1fr;
+  gap: 20px;
+  padding: 20px;
+  min-height: calc(100vh - 76px);
+}
+
+.record-list-panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 16px;
+  display: grid;
+  align-content: start;
+  gap: 12px;
+}
+
+.record-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.record-list-header h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.record-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.record-list-item {
+  width: 100%;
+  text-align: left;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  cursor: pointer;
+  display: grid;
+  gap: 6px;
+}
+
+.record-list-item:hover {
+  border-color: var(--teal);
+}
+
+.record-list-item.active {
+  border-color: var(--teal);
+  background: var(--soft-teal);
+}
+
+.record-list-item .record-item-time {
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.record-item-badges {
+  display: flex;
+  gap: 6px;
+}
+
+.record-badge {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  color: var(--muted);
+}
+
+.record-badge.available {
+  color: var(--teal-dark);
+  border-color: var(--teal);
+  background: var(--soft-teal);
+}
+
+.record-detail-panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 20px;
+  display: grid;
+  align-content: start;
+  gap: 18px;
+}
+
+.record-detail-panel .empty-hint {
+  color: var(--muted);
+}
+
+.record-detail-header h2 {
+  margin: 0 0 4px;
+}
+
+.record-sketch-block {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 14px;
+  display: grid;
+  gap: 10px;
+  background: var(--paper);
+  max-width: 360px;
+}
+
+.record-sketch-block h3 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.record-sketch-block img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  background: #11130f;
+}
+
+.record-mode-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.record-mode-card {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 14px;
+  display: grid;
+  gap: 10px;
+  background: var(--paper);
+}
+
+.record-mode-card.unavailable {
+  opacity: 0.5;
+}
+
+.record-mode-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  background: #11130f;
+}
+
+.record-mode-card h3 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.record-mode-files {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.playback-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  min-height: 100vh;
+  background: #11130f;
+  overflow: hidden;
+}
+
+.playback-screen img,
+.playback-screen canvas {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  touch-action: none;
+}
+
+.playback-controls {
+  position: fixed;
+  right: 18px;
+  top: 18px;
+  z-index: 92;
+  display: flex;
+  gap: 8px;
+}
+
+.playback-controls .secondary-button.muted {
+  background: var(--soft-rust);
+  border-color: var(--rust);
+}
+
+.panorama-hint {
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+  z-index: 92;
+  margin: 0;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(17, 19, 15, 0.6);
+  color: #f7f4ee;
+  font-size: 13px;
+}

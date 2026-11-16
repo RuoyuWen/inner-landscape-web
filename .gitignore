@@ -1,0 +1,20 @@
+# Credentials stay local, including legacy key text files.
+.env
+.env.*
+!.env.example
+*API*key*.txt
+*api*key*.txt
+*api_key*.txt
+*api-key*.txt
+*secret*
+*credential*
+*.pem
+*.key
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+# Optional Unreal integration output, regenerated locally.
+Saved/

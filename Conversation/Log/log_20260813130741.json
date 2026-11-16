@@ -1,0 +1,44 @@
+{
+  "project_id": "PATH_20260813130741",
+  "created_at": "2026-08-13T01:07:42.613Z",
+  "mode": "path-bubble-picker",
+  "language": "en-US",
+  "selections": {
+    "season": {
+      "label": "Mid-spring",
+      "path": [
+        "spring",
+        "spring_mid"
+      ]
+    },
+    "weather": {
+      "label": "A few scattered clouds",
+      "path": [
+        "clear",
+        "clear_light_clouds"
+      ]
+    },
+    "time": {
+      "label": "First light",
+      "path": [
+        "dawn",
+        "dawn_firstlight"
+      ]
+    },
+    "light": {
+      "label": "Warm amber light",
+      "path": [
+        "soft",
+        "soft_amber"
+      ]
+    },
+    "road": {
+      "course": "gentle_bend",
+      "width": "medium",
+      "surface": "dirt",
+      "custom": false,
+      "label": "Gently winding · Medium · Dirt"
+    }
+  },
+  "title": "Amber Dawn Pathway"
+}

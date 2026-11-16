@@ -1,0 +1,9 @@
+{
+  "image_model": "gpt-image-2",
+  "flat_image_prompt": "The scene shows a narrow, straight unpaved dirt path, extending in a straight line from the foreground to a single vanishing point at the horizon, shown in centered one-point perspective. A modest, sparse number of trees stand along each side of the path -- not a dense or continuous row -- spaced well apart, canopies visible against the sky, thinning out further toward the horizon. The path and its flanking trees are the only structural elements in the scene -- no forks, no side paths, no clearings, no other landmarks. In early spring, the air carries the fresh scent of budding leaves. A few delicate clouds dot the dawn sky, painted with warm orange light as the sun begins to rise. The scene feels serene and awakening, with soft shadows stretching along the path. Create one realistic flat 2D landscape image, single camera view, natural perspective, 3:2 composition, not panoramic, not equirectangular, no fisheye distortion, no split view, no frame, no text, no watermark.",
+  "sound_prompt": "very quiet; at most a faint breeze Soft, clean recording. No static, no hiss, no white noise, no distortion, no crackle, no clipping.",
+  "music_prompt": "disabled",
+  "image_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260807114354\\image.png",
+  "sound_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260807114354\\sound_effect.mp3",
+  "music_path": null
+}

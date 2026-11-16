@@ -1,0 +1,44 @@
+{
+  "project_id": "PATH_20260814160710",
+  "created_at": "2026-08-14T04:07:39.034Z",
+  "mode": "path-bubble-picker",
+  "language": "zh-CN",
+  "selections": {
+    "season": {
+      "label": "初秋",
+      "path": [
+        "autumn",
+        "autumn_early"
+      ]
+    },
+    "weather": {
+      "label": "微云点缀",
+      "path": [
+        "clear",
+        "clear_light_clouds"
+      ]
+    },
+    "time": {
+      "label": "正午",
+      "path": [
+        "daytime",
+        "daytime_noon"
+      ]
+    },
+    "light": {
+      "label": "温暖橙光",
+      "path": [
+        "soft",
+        "soft_amber"
+      ]
+    },
+    "road": {
+      "course": "gentle_bend",
+      "width": "medium",
+      "surface": "dirt",
+      "custom": false,
+      "label": "微微蜿蜒 · 适中 · 泥土"
+    }
+  },
+  "title": "Path through Early Autumn"
+}

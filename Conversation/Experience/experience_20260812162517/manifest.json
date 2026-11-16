@@ -1,0 +1,9 @@
+{
+  "image_model": "gpt-image-2",
+  "flat_image_prompt": "The scene shows a modestly wide, winding, twisting unpaved dirt path, winding sharply back and forth as it recedes from the foreground toward the horizon, with clearly visible S-curves and switchbacks, its vanishing point shifting with each turn, shown in a naturalistic centered perspective. A modest, sparse number of trees stand along each side of the path -- not a dense or continuous row -- spaced well apart, canopies visible against the sky, thinning out further toward the horizon. The path and its flanking trees are the only structural elements in the scene -- no forks, no side paths, no clearings, no other landmarks. In the deep autumn, the path is enveloped by a swirling and forceful wind, causing dry leaves to dance through the air. Dusk settles in, the sky a shifting canvas of deepening colors as the light flickers between shadows and brief moments of brightness. The air feels crisp and carries the earthy scent of fallen leaves. Create one realistic flat 2D landscape image, single camera view, natural perspective, 3:2 composition, not panoramic, not equirectangular, no fisheye distortion, no split view, no frame, no text, no watermark.",
+  "sound_prompt": "powerful, forceful gale-force wind with creaking branches Soft, clean recording. No static, no hiss, no white noise, no distortion, no crackle, no clipping.",
+  "music_prompt": "disabled",
+  "image_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260812162517\\image.png",
+  "sound_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260812162517\\sound_effect.mp3",
+  "music_path": null
+}

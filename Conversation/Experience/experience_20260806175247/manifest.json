@@ -1,0 +1,9 @@
+{
+  "image_model": "gpt-image-2",
+  "flat_image_prompt": "The scene shows a narrow, gently winding stone-paved path, curving gently from side to side as it recedes from the foreground toward the horizon, its vanishing point shifting subtly with the bend, shown in a naturalistic centered perspective. Two rows of trees line both sides of the path, evenly spaced, canopies visible against the sky. The path and its flanking trees are the only structural elements in the scene -- no forks, no side paths, no clearings, no other landmarks. In late summer, the landscape is bathed in the soft, dim glow of sunset. A clear sky stretches overhead, with a subtle haze diffusing the light. The air is warm with a gentle hint of lingering summer freshness. Create one realistic flat 2D landscape image, single camera view, natural perspective, 3:2 composition, not panoramic, not equirectangular, no fisheye distortion, no split view, no frame, no text, no watermark.",
+  "sound_prompt": "none",
+  "music_prompt": "disabled",
+  "image_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260806175247\\image.png",
+  "sound_path": null,
+  "music_path": null
+}

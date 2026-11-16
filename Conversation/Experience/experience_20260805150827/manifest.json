@@ -1,0 +1,9 @@
+{
+  "image_model": "gpt-image-2",
+  "flat_image_prompt": "A breathtaking Danxia landscape unfolds in the late autumn evening, bathed in the warm orange glow of sunset. The sky is clear, with a gentle breeze stirring the air. The terrain features striking red rock formations, with canyons flanking a path that leads towards the distant horizon where the sun sets. Birds can be seen flying across the expansive view, adding life to the serene scene. The environment is open, offering a seamless view to the far-off horizon. No people are present. Create one realistic flat 2D landscape image, single camera view, natural perspective, 3:2 composition, not panoramic, not equirectangular, no fisheye distortion, no split view, no frame, no text, no watermark.",
+  "sound_prompt": "Soft, gentle, low-intensity background ambience: the sound of wind blowing through the sand and across the rock formations, with occasional rustling as it moves. No voices, no vehicle sounds, no sudden loud events. No static, no hiss, no white noise, no distortion, no crackle, no clipping. Soft, clean recording. No static, no hiss, no white noise, no distortion, no crackle, no clipping.",
+  "music_prompt": "Sparse non-vocal ambient instrumental music for a serene Danxia landscape at sunset. Slow tempo, warm sustained pads, gentle string harmonies, subtle and soft texture, low intensity, no vocals, no lyrics, no percussion hits, no sudden dramatic changes.",
+  "image_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260805150827\\image.png",
+  "sound_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260805150827\\sound_effect.mp3",
+  "music_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260805150827\\music.mp3"
+}

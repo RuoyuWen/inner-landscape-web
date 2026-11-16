@@ -1,0 +1,44 @@
+{
+  "project_id": "PATH_20260806162835",
+  "created_at": "2026-08-06T04:28:56.284Z",
+  "mode": "path-bubble-picker",
+  "language": "zh-CN",
+  "selections": {
+    "season": {
+      "label": "深秋",
+      "path": [
+        "autumn",
+        "autumn_late"
+      ]
+    },
+    "weather": {
+      "label": "初雪",
+      "path": [
+        "snow",
+        "snow_first"
+      ]
+    },
+    "time": {
+      "label": "暮色四合",
+      "path": [
+        "dusk",
+        "dusk_twilight"
+      ]
+    },
+    "light": {
+      "label": "阴冷灰光",
+      "path": [
+        "dim",
+        "dim_cold"
+      ]
+    },
+    "road": {
+      "course": "gentle_bend",
+      "width": "medium",
+      "surface": "gravel",
+      "custom": false,
+      "label": "微微蜿蜒 · 适中 · 碎石"
+    }
+  },
+  "title": "Whispers of Winter's Edge"
+}

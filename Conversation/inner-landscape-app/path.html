@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decorate This Road</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./path.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <div class="brand" id="pathBrand">Decorate This Road</div>
+          <p class="tagline" id="pathTagline">Choose season, weather, time, and light for a road that reflects your mood.</p>
+        </div>
+        <nav class="top-actions" aria-label="Global actions">
+          <a class="icon-button" href="./record.html" title="Generation History" aria-label="Generation History">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/></svg>
+          </a>
+          <button class="secondary-button" id="pathMusicToggleBtn" type="button"></button>
+          <button class="icon-button" id="pathSettingsBtn" type="button" title="Settings" aria-label="Settings">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.6-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3h.1A1.7 1.7 0 0 0 10 3.1V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.6h.1a1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9v.1a1.7 1.7 0 0 0 1.6 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg>
+          </button>
+        </nav>
+      </header>
+
+      <main>
+        <section class="screen path-language-screen" id="pathLanguageScreen">
+          <div class="path-language-copy">
+            <h1>Language</h1>
+            <div class="path-language-choice">
+              <button class="primary-button" id="pathLangZh" type="button">Chinese</button>
+              <button class="primary-button" id="pathLangEn" type="button">English</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="screen path-intro-screen hidden" id="pathIntroScreen">
+          <img class="path-intro-image" id="pathIntroImage" alt="" />
+          <div class="path-intro-copy">
+            <p id="pathIntroText"></p>
+            <button class="primary-button" id="pathIntroContinueBtn" type="button"></button>
+          </div>
+        </section>
+
+        <section class="screen path-bubbles-screen hidden" id="pathBubblesScreen">
+          <div class="path-bubbles-header">
+            <h1 id="pathBubblesTitle"></h1>
+            <p id="pathBubblesDesc"></p>
+          </div>
+          <div class="path-road-scene">
+            <div class="path-sketch-frame" id="pathSketchFrame" data-filled="0">
+            <svg id="pathSketch" class="path-sketch" viewBox="0 0 480 320" aria-hidden="true">
+              <rect class="sketch-sky" x="0" y="0" width="480" height="215"></rect>
+              <rect class="sketch-ground" x="0" y="215" width="480" height="105"></rect>
+
+              <g class="sketch-hills">
+                <path class="sketch-hill-far" d="M0 200 Q60 178 120 196 T240 190 T360 200 T480 188 V215 H0 Z"></path>
+                <path class="sketch-hill-near" d="M0 210 Q80 192 170 206 T340 202 T480 208 V215 H0 Z"></path>
+              </g>
+
+              <g class="sketch-stars">
+                <circle cx="40" cy="20" r="1.6"></circle>
+                <circle cx="80" cy="15" r="1.6"></circle>
+                <circle cx="130" cy="25" r="1.6"></circle>
+                <circle cx="170" cy="10" r="1.6"></circle>
+                <circle cx="210" cy="20" r="1.6"></circle>
+                <circle cx="250" cy="15" r="1.6"></circle>
+                <circle cx="290" cy="25" r="1.6"></circle>
+                <circle cx="330" cy="12" r="1.6"></circle>
+                <circle cx="360" cy="22" r="1.6"></circle>
+                <circle cx="440" cy="25" r="1.6"></circle>
+                <circle cx="460" cy="10" r="1.6"></circle>
+              </g>
+
+              <g class="sketch-sun-group">
+                <circle class="sketch-sun" cx="400" cy="55" r="24"></circle>
+                <g class="sketch-sun-rays">
+                  <line x1="400" y1="20" x2="400" y2="8"></line>
+                  <line x1="428" y1="55" x2="440" y2="55"></line>
+                  <line x1="400" y1="90" x2="400" y2="102"></line>
+                  <line x1="372" y1="55" x2="360" y2="55"></line>
+                  <line x1="420" y1="35" x2="429" y2="26"></line>
+                  <line x1="420" y1="75" x2="429" y2="84"></line>
+                  <line x1="380" y1="35" x2="371" y2="26"></line>
+                  <line x1="380" y1="75" x2="371" y2="84"></line>
+                </g>
+                <g class="sketch-moon-parts">
+                  <circle class="sketch-moon-glow" cx="400" cy="55" r="34"></circle>
+                  <path class="sketch-moon" d="M400 33a22 22 0 1 0 0 44 17.6 17.6 0 0 1 0-44z"></path>
+                </g>
+              </g>
+
+              <g class="sketch-cloud sketch-cloud-1">
+                <ellipse cx="90" cy="55" rx="22" ry="14"></ellipse>
+                <ellipse cx="112" cy="50" rx="18" ry="12"></ellipse>
+                <ellipse cx="70" cy="52" rx="16" ry="11"></ellipse>
+              </g>
+              <g class="sketch-cloud sketch-cloud-2">
+                <ellipse cx="215" cy="38" rx="20" ry="13"></ellipse>
+                <ellipse cx="236" cy="34" rx="16" ry="11"></ellipse>
+                <ellipse cx="196" cy="36" rx="14" ry="10"></ellipse>
+              </g>
+              <g class="sketch-cloud sketch-cloud-3">
+                <ellipse cx="315" cy="75" rx="24" ry="15"></ellipse>
+                <ellipse cx="338" cy="70" rx="18" ry="12"></ellipse>
+                <ellipse cx="295" cy="72" rx="15" ry="10"></ellipse>
+              </g>
+
+              <polyline class="sketch-lightning" points="300,45 285,95 302,95 280,150"></polyline>
+
+              <g class="sketch-wind">
+                <path class="sketch-wind-1" d="M40,150 q20,-8 40,0"></path>
+                <path class="sketch-wind-2" d="M340,140 q20,-8 40,0"></path>
+                <path class="sketch-wind-3" d="M150,60 q20,-6 40,0"></path>
+              </g>
+
+              <g class="sketch-rain">
+                <line class="sketch-rain-1" x1="120" y1="90" x2="108" y2="130"></line>
+                <line class="sketch-rain-2" x1="170" y1="80" x2="158" y2="120"></line>
+                <line class="sketch-rain-3" x1="230" y1="95" x2="218" y2="135"></line>
+                <line class="sketch-rain-4" x1="280" y1="75" x2="268" y2="115"></line>
+                <line class="sketch-rain-5" x1="330" y1="90" x2="318" y2="130"></line>
+                <line class="sketch-rain-6" x1="60" y1="100" x2="48" y2="140"></line>
+              </g>
+
+              <g class="sketch-snow">
+                <circle class="sketch-snow-1" cx="70" cy="90" r="3"></circle>
+                <circle class="sketch-snow-2" cx="120" cy="70" r="2.5"></circle>
+                <circle class="sketch-snow-3" cx="160" cy="110" r="3"></circle>
+                <circle class="sketch-snow-4" cx="200" cy="85" r="2.5"></circle>
+                <circle class="sketch-snow-5" cx="240" cy="120" r="3"></circle>
+                <circle class="sketch-snow-6" cx="280" cy="95" r="2.5"></circle>
+                <circle class="sketch-snow-7" cx="320" cy="115" r="3"></circle>
+                <circle class="sketch-snow-8" cx="360" cy="80" r="2.5"></circle>
+                <circle class="sketch-snow-9" cx="90" cy="130" r="2.5"></circle>
+                <circle class="sketch-snow-10" cx="300" cy="60" r="2.5"></circle>
+              </g>
+
+              <rect class="sketch-mist" x="0" y="180" width="480" height="70"></rect>
+
+              <g class="sketch-distant-trees">
+                <path d="M100 216 l7 -14 l7 14 z"></path>
+                <path d="M116 217 l6 -12 l6 12 z"></path>
+                <path d="M131 218 l5 -10 l5 10 z"></path>
+                <path d="M144 218.5 l4 -8 l4 8 z"></path>
+                <path d="M156 219 l3.4 -7 l3.4 7 z"></path>
+                <path d="M166 219.3 l3 -6 l3 6 z"></path>
+                <path d="M380 216 l-7 -14 l-7 14 z"></path>
+                <path d="M364 217 l-6 -12 l-6 12 z"></path>
+                <path d="M349 218 l-5 -10 l-5 10 z"></path>
+                <path d="M336 218.5 l-4 -8 l-4 8 z"></path>
+                <path d="M324 219 l-3.4 -7 l-3.4 7 z"></path>
+                <path d="M314 219.3 l-3 -6 l-3 6 z"></path>
+              </g>
+
+              <g class="sketch-tree sketch-tree-left">
+                <rect class="sketch-trunk" x="64" y="195" width="10" height="35"></rect>
+                <circle class="sketch-tree-canopy" cx="69" cy="175" r="30"></circle>
+              </g>
+              <g class="sketch-tree sketch-tree-right">
+                <rect class="sketch-trunk" x="406" y="195" width="10" height="35"></rect>
+                <circle class="sketch-tree-canopy" cx="411" cy="175" r="30"></circle>
+              </g>
+
+              <g class="sketch-blossoms">
+                <circle cx="52" cy="160" r="3"></circle>
+                <circle cx="86" cy="155" r="3"></circle>
+                <circle cx="69" cy="148" r="3"></circle>
+                <circle cx="394" cy="160" r="3"></circle>
+                <circle cx="428" cy="155" r="3"></circle>
+                <circle cx="411" cy="148" r="3"></circle>
+              </g>
+
+              <g class="sketch-fallen-leaves">
+                <circle cx="130" cy="235" r="3"></circle>
+                <circle cx="160" cy="245" r="2.5"></circle>
+                <circle cx="340" cy="240" r="3"></circle>
+                <circle cx="310" cy="250" r="2.5"></circle>
+              </g>
+
+              <g class="sketch-fireflies">
+                <circle cx="150" cy="245" r="2"></circle>
+                <circle cx="180" cy="260" r="1.6"></circle>
+                <circle cx="210" cy="240" r="1.8"></circle>
+                <circle cx="270" cy="255" r="1.6"></circle>
+                <circle cx="300" cy="242" r="2"></circle>
+                <circle cx="330" cy="262" r="1.7"></circle>
+              </g>
+
+              <polygon class="sketch-road" points="220,215 260,215 370,320 110,320"></polygon>
+              <polyline class="sketch-road-line" points="240,215 240,318"></polyline>
+
+              <circle class="sketch-pulse-ring" id="pathSketchPulse" cx="240" cy="170" r="90"></circle>
+            </svg>
+            </div>
+            <div class="path-bubbles" id="pathBubbles"></div>
+          </div>
+          <div class="path-bubbles-actions">
+            <button class="secondary-button" id="pathResetSelectionsBtn" type="button"></button>
+            <button class="primary-button" id="pathGenerateSummaryBtn" type="button"></button>
+          </div>
+        </section>
+
+        <section class="screen path-confirm-screen hidden" id="pathConfirmScreen">
+          <div class="confirm-header">
+            <div>
+              <h1 id="pathConfirmTitle"></h1>
+              <p id="pathConfirmDesc"></p>
+            </div>
+            <button class="secondary-button" id="pathBackToBubblesBtn" type="button"></button>
+          </div>
+          <div class="path-selection-summary" id="pathSelectionSummary"></div>
+          <div class="output-preview hidden" id="pathOutputPreview"></div>
+          <div class="output-actions">
+            <button class="primary-button" id="pathSummarizeBtn" type="button"></button>
+            <button class="secondary-button hidden" id="pathSaveBtn" type="button"></button>
+            <button class="secondary-button hidden" id="pathGenerate2dBtn" type="button"></button>
+            <button class="secondary-button hidden" id="pathGenerateVrBtn" type="button"></button>
+            <button class="primary-button hidden" id="pathStartExperienceBtn" type="button"></button>
+          </div>
+          <p class="status-text hidden" id="pathVrStatus"></p>
+          <div class="experience-preview hidden" id="pathExperiencePreview"></div>
+        </section>
+
+        <section class="screen experience-screen hidden" id="pathExperienceScreen">
+          <img id="pathExperienceImage" alt="Generated 2D inner landscape" />
+          <audio id="pathExperienceSound" loop></audio>
+          <div class="experience-controls">
+            <button class="secondary-button" id="pathExitExperienceBtn" type="button"></button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="drawer-backdrop hidden" id="pathDrawerBackdrop"></div>
+    <aside class="settings-drawer hidden" id="pathSettingsDrawer" aria-label="Settings">
+      <div class="drawer-header">
+        <div>
+          <h2>Settings</h2>
+          <p>API keys are kept in this browser session and shared with the dialogue page.</p>
+        </div>
+        <button class="icon-button" id="pathCloseSettingsBtn" type="button" title="Close Settings" aria-label="Close Settings">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      </div>
+      <section class="settings-section">
+        <h3>API Settings</h3>
+        <label for="pathApiKeyInput">OpenAI API Key</label>
+        <input id="pathApiKeyInput" type="password" autocomplete="off" placeholder="sk-..." />
+        <label for="pathElevenLabsKeyInput">ElevenLabs API Key</label>
+        <input id="pathElevenLabsKeyInput" type="password" autocomplete="off" placeholder="xi-..." />
+        <label for="pathSoundProviderSelect">Sound Effect Provider</label>
+        <select id="pathSoundProviderSelect">
+          <option value="elevenlabs">ElevenLabs</option>
+          <option value="falai">fal.ai (Stable Audio)</option>
+        </select>
+        <label for="pathFalKeyInput">fal.ai API Key</label>
+        <input id="pathFalKeyInput" type="password" autocomplete="off" placeholder="fal_..." />
+      </section>
+    </aside>
+
+    <div class="path-picker-backdrop hidden" id="pathPickerBackdrop"></div>
+    <section class="path-picker hidden" id="pathPicker" aria-label="Choice panel">
+      <div class="path-picker-header">
+        <h2 id="pathPickerTitle"></h2>
+        <button class="icon-button compact" id="pathPickerCloseBtn" type="button" title="Close" aria-label="Close">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      </div>
+      <div class="path-picker-breadcrumb" id="pathPickerBreadcrumb"></div>
+      <div class="path-picker-options" id="pathPickerOptions"></div>
+      <div class="path-picker-custom hidden" id="pathPickerCustom">
+        <input id="pathPickerCustomInput" type="text" maxlength="60" />
+        <button class="primary-button" id="pathPickerCustomConfirmBtn" type="button"></button>
+      </div>
+      <div class="path-picker-footer">
+        <p class="path-picker-current" id="pathPickerCurrent"></p>
+        <button class="primary-button hidden" id="pathPickerConfirmBtn" type="button"></button>
+      </div>
+    </section>
+
+    <dialog id="pathInfoDialog">
+      <form method="dialog">
+        <h2 id="pathDialogTitle"></h2>
+        <div id="pathDialogBody"></div>
+        <button class="primary-button" id="pathDialogOkBtn"></button>
+      </form>
+    </dialog>
+
+    <script src="./path.js"></script>
+  </body>
+</html>

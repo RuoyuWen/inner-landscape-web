@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generation History</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./record.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <div class="brand">Generation History</div>
+          <p class="tagline">Choose a generation to revisit its 2D preview or explore its 360-degree panorama.</p>
+        </div>
+        <nav class="top-actions" aria-label="Global actions">
+          <a class="icon-button" href="./path.html" title="Back to Creation" aria-label="Back to Creation">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+          </a>
+        </nav>
+      </header>
+
+      <main class="record-main">
+        <section class="record-list-panel" aria-label="Generation list">
+          <div class="record-list-header">
+            <h2>Generations</h2>
+            <button class="ghost-button" id="refreshBtn" type="button">Refresh</button>
+          </div>
+          <p class="status-text" id="listStatus">Loading…</p>
+          <ul class="record-list" id="recordList"></ul>
+        </section>
+
+        <section class="record-detail-panel" id="recordDetail" aria-label="Generation details">
+          <p class="empty-hint">Select a generation on the left to view its details.</p>
+        </section>
+      </main>
+    </div>
+
+    <section class="playback-screen hidden" id="playbackScreen" aria-label="Playback">
+      <img id="playbackImage" class="hidden" alt="" />
+      <canvas id="panoramaCanvas" class="hidden"></canvas>
+      <audio id="playbackMusic" loop></audio>
+      <audio id="playbackSound" loop></audio>
+      <p class="panorama-hint hidden" id="panoramaHint">Drag to look around · Scroll to zoom</p>
+      <div class="playback-controls">
+        <button class="primary-button hidden" id="enterXrBtn" type="button">View in VR Headset</button>
+        <button class="secondary-button" id="muteMusicBtn" type="button">Mute Music</button>
+        <button class="secondary-button" id="muteSoundBtn" type="button">Mute Sound</button>
+        <button class="secondary-button" id="exitPlaybackBtn" type="button">Exit</button>
+      </div>
+    </section>
+
+    <script src="./panorama-viewer.js"></script>
+    <script src="./record.js"></script>
+  </body>
+</html>

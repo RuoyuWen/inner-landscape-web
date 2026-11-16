@@ -1,0 +1,41 @@
+{
+  "project_id": "PATH_20260807152451",
+  "created_at": "2026-08-07T03:24:56.493Z",
+  "mode": "path-bubble-picker",
+  "language": "zh-CN",
+  "selections": {
+    "season": {
+      "label": "秋",
+      "path": [
+        "autumn"
+      ]
+    },
+    "weather": {
+      "label": "细雨",
+      "path": [
+        "rain",
+        "rain_light"
+      ]
+    },
+    "time": {
+      "label": "黄昏",
+      "path": [
+        "dusk"
+      ]
+    },
+    "light": {
+      "label": "昏暗",
+      "path": [
+        "dim"
+      ]
+    },
+    "road": {
+      "course": "straight",
+      "width": "medium",
+      "surface": "gravel",
+      "custom": false,
+      "label": "笔直向前 · 适中 · 碎石"
+    }
+  },
+  "title": "Misty Autumn Path"
+}

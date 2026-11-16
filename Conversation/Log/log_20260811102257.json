@@ -1,0 +1,44 @@
+{
+  "project_id": "PATH_20260811102257",
+  "created_at": "2026-08-10T22:23:10.658Z",
+  "mode": "path-bubble-picker",
+  "language": "zh-CN",
+  "selections": {
+    "season": {
+      "label": "盛夏",
+      "path": [
+        "summer",
+        "summer_peak"
+      ]
+    },
+    "weather": {
+      "label": "微云点缀",
+      "path": [
+        "clear",
+        "clear_light_clouds"
+      ]
+    },
+    "time": {
+      "label": "下午",
+      "path": [
+        "daytime",
+        "daytime_afternoon"
+      ]
+    },
+    "light": {
+      "label": "阳光炽烈",
+      "path": [
+        "bright",
+        "bright_blazing"
+      ]
+    },
+    "road": {
+      "course": "winding",
+      "width": "narrow",
+      "surface": "asphalt",
+      "custom": false,
+      "label": "蜿蜒曲折 · 狭窄 · 柏油"
+    }
+  },
+  "title": "Summer Road in Afternoon Sun"
+}

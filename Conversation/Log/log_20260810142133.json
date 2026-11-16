@@ -1,0 +1,44 @@
+{
+  "project_id": "PATH_20260810142133",
+  "created_at": "2026-08-10T02:21:36.787Z",
+  "mode": "path-bubble-picker",
+  "language": "zh-CN",
+  "selections": {
+    "season": {
+      "label": "晚夏",
+      "path": [
+        "summer",
+        "summer_late"
+      ]
+    },
+    "weather": {
+      "label": "细雨",
+      "path": [
+        "rain",
+        "rain_light"
+      ]
+    },
+    "time": {
+      "label": "星空",
+      "path": [
+        "night",
+        "night_starry"
+      ]
+    },
+    "light": {
+      "label": "深沉黑暗",
+      "path": [
+        "dim",
+        "dim_dark"
+      ]
+    },
+    "road": {
+      "course": "gentle_bend",
+      "width": "medium",
+      "surface": "asphalt",
+      "custom": false,
+      "label": "微微蜿蜒 · 适中 · 柏油"
+    }
+  },
+  "title": "Rain Under a Starry Late Summer Sky"
+}

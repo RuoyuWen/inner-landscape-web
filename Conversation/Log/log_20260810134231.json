@@ -1,0 +1,44 @@
+{
+  "project_id": "PATH_20260810134231",
+  "created_at": "2026-08-10T01:42:32.943Z",
+  "mode": "path-bubble-picker",
+  "language": "zh-CN",
+  "selections": {
+    "season": {
+      "label": "初夏",
+      "path": [
+        "summer",
+        "summer_early"
+      ]
+    },
+    "weather": {
+      "label": "微风",
+      "path": [
+        "wind",
+        "wind_breeze"
+      ]
+    },
+    "time": {
+      "label": "下午",
+      "path": [
+        "daytime",
+        "daytime_afternoon"
+      ]
+    },
+    "light": {
+      "label": "澄澈晴光",
+      "path": [
+        "bright",
+        "bright_clear"
+      ]
+    },
+    "road": {
+      "course": "gentle_bend",
+      "width": "medium",
+      "surface": "gravel",
+      "custom": false,
+      "label": "微微蜿蜒 · 适中 · 碎石"
+    }
+  },
+  "title": "Midsummer Breezes"
+}

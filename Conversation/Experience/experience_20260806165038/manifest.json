@@ -1,0 +1,9 @@
+{
+  "image_model": "gpt-image-2",
+  "flat_image_prompt": "The scene shows a modestly wide, gently winding stone-paved path, extending from the foreground to one vanishing point at the horizon, shown in centered one-point perspective. Two rows of trees line both sides of the path, evenly spaced, canopies visible against the sky. The path and its flanking trees are the only structural elements in the scene -- no forks, no side paths, no clearings, no other landmarks. The late winter scene is enveloped in a heavy rainstorm, with dense rainfall creating a shimmering curtain. Dusk has descended, casting a cold, white, diffuse glow, softening the tree silhouettes. Create one realistic flat 2D landscape image, single camera view, natural perspective, 3:2 composition, not panoramic, not equirectangular, no fisheye distortion, no split view, no frame, no text, no watermark.",
+  "sound_prompt": "The air is filled with the sound of heavy, dense rainfall, accompanied by water running and dripping off leaves, no voices, no vehicle sounds, no sudden loud events, no static, no hiss, no white noise, no distortion, no crackle, no clipping. Soft, clean recording. No static, no hiss, no white noise, no distortion, no crackle, no clipping.",
+  "music_prompt": "disabled",
+  "image_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260806165038\\image.png",
+  "sound_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260806165038\\sound_effect.mp3",
+  "music_path": null
+}

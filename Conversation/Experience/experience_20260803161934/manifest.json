@@ -1,0 +1,9 @@
+{
+  "image_model": "gpt-image-2",
+  "flat_image_prompt": "A vast, open desert landscape under the scorching summer sun at noon. The intense, glaring light casts sharp shadows across the endless dunes. In the distance, a small oasis with lush greenery and a shimmering pool of water offers a stark contrast to the arid surroundings. The sky is a brilliant blue, uninterrupted by clouds. The scene is devoid of paths or exits, emphasizing the isolation and expansiveness of the desert. Create one realistic flat 2D landscape image, single camera view, natural perspective, 3:2 composition, not panoramic, not equirectangular, no fisheye distortion, no split view, no frame, no text, no watermark.",
+  "sound_prompt": "The sound of the wind whistling continuously across the open desert, with no other sounds present. No voices, no vehicle sounds, no sudden loud events.",
+  "music_prompt": "Sparse, ambient instrumental music with a slow tempo. Gentle, sustained synth pads create a serene atmosphere, with soft, airy textures and minimal intensity. No vocals, no lyrics, no percussion, no sudden dramatic changes.",
+  "image_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260803161934\\image.png",
+  "sound_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260803161934\\sound_effect.mp3",
+  "music_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260803161934\\music.mp3"
+}

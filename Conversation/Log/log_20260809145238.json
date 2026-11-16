@@ -1,0 +1,44 @@
+{
+  "project_id": "PATH_20260809145238",
+  "created_at": "2026-08-09T02:53:16.324Z",
+  "mode": "path-bubble-picker",
+  "language": "zh-CN",
+  "selections": {
+    "season": {
+      "label": "深秋",
+      "path": [
+        "autumn",
+        "autumn_late"
+      ]
+    },
+    "weather": {
+      "label": "细雨",
+      "path": [
+        "rain",
+        "rain_light"
+      ]
+    },
+    "time": {
+      "label": "日落时分",
+      "path": [
+        "dusk",
+        "dusk_sunset"
+      ]
+    },
+    "light": {
+      "label": "阴冷灰光",
+      "path": [
+        "dim",
+        "dim_cold"
+      ]
+    },
+    "road": {
+      "course": "gentle_bend",
+      "width": "medium",
+      "surface": "stone",
+      "custom": false,
+      "label": "微微蜿蜒 · 适中 · 石板"
+    }
+  },
+  "title": "Misty Autumn Path at Twilight"
+}

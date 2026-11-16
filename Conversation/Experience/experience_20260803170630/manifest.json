@@ -1,0 +1,9 @@
+{
+  "image_model": "gpt-image-2",
+  "flat_image_prompt": "A realistic depiction of Mount Everest in summer at dawn, with a serene snowy landscape under the soft glow of moonlight. The vast, open expanse stretches endlessly, covered in a blanket of fresh snow. The sky is clear, allowing the moonlight to illuminate the snow-covered peaks and ridges. There are no paths or exits visible, and the scene is seamlessly connected, offering a boundless view in every direction. No people, no buildings, no vegetation. Create one realistic flat 2D landscape image, single camera view, natural perspective, 3:2 composition, not panoramic, not equirectangular, no fisheye distortion, no split view, no frame, no text, no watermark.",
+  "sound_prompt": "The sound of strong, continuous winds sweeping across the snowy landscape. No voices, no vehicle sounds, no sudden loud events.",
+  "music_prompt": "Sparse, non-vocal ambient instrumental music with a slow tempo. Soft, sustained pads and gentle, airy textures create a calm and expansive atmosphere. Low intensity, no vocals, no lyrics, no percussion hits, no sudden dramatic changes.",
+  "image_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260803170630\\image.png",
+  "sound_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260803170630\\sound_effect.mp3",
+  "music_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260803170630\\music.mp3"
+}

@@ -1,0 +1,37 @@
+{
+  "project_id": "PATH_20260805224403",
+  "created_at": "2026-08-05T10:44:05.260Z",
+  "mode": "path-bubble-picker",
+  "language": "zh-CN",
+  "selections": {
+    "season": {
+      "label": "晚冬",
+      "path": [
+        "winter",
+        "winter_late"
+      ]
+    },
+    "weather": {
+      "label": "薄雾笼罩",
+      "path": [
+        "overcast",
+        "overcast_mist"
+      ]
+    },
+    "time": {
+      "label": "上午",
+      "path": [
+        "daytime",
+        "daytime_morning"
+      ]
+    },
+    "light": {
+      "label": "忽明忽暗",
+      "path": [
+        "dramatic",
+        "dramatic_flicker"
+      ]
+    }
+  },
+  "title": "Winter Morning Mist"
+}

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study 2 · Results</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./study2.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <div class="brand">Study 2 · Results</div>
+          <p class="tagline">SAM ratings from 8 participants, each completing 24 trials (12 VR + 12 2D).</p>
+        </div>
+        <nav class="top-actions" aria-label="Global actions">
+          <label class="test-mode-toggle">
+            <input type="checkbox" id="testModeToggle" />
+            View Test Data
+          </label>
+          <button class="ghost-button" id="refreshBtn" type="button">Refresh</button>
+          <a class="primary-button" id="downloadCsvBtn" href="/study2/responses.csv" download="study2_responses.csv">Download CSV</a>
+          <a class="icon-button" href="./study2.html" title="Back to Questionnaire" aria-label="Back to Questionnaire">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6" /></svg>
+          </a>
+        </nav>
+      </header>
+
+      <p class="test-mode-banner hidden" id="testModeBanner">Viewing test data · Stored separately from participant data</p>
+
+      <section class="screen results-screen">
+        <h2>Participant Progress</h2>
+        <div class="results-progress-grid" id="progressGrid"></div>
+
+        <div class="results-section-header">
+          <div>
+            <h2>Export Participants 7 and 8</h2>
+            <p class="notice">The two additional participants share the same response log. These exports filter their rows without changing the full export.</p>
+          </div>
+          <div class="button-row">
+            <a class="secondary-button" id="downloadCohortCsvBtn" href="/study2/responses.csv?participants=7,8" download="study2_responses_7-8.csv">Download Response CSV</a>
+            <a class="secondary-button" id="downloadCohortWideCsvBtn" href="/study2/responses-wide.csv?participants=7,8" download="study2_responses_wide_7-8.csv">Download Wide CSV</a>
+          </div>
+        </div>
+
+        <div class="results-section-header">
+          <div>
+            <h2>Ratings by Work (Wide Table, All 8 Participants)</h2>
+            <p class="notice">Each row represents one work (P1-P24, VR/2D), with four reviewers side by side. Fill in the blank original_* columns to compare ratings.</p>
+          </div>
+          <a class="secondary-button" id="downloadWideCsvBtn" href="/study2/responses-wide.csv" download="study2_responses_wide.csv">Download Wide CSV</a>
+        </div>
+        <div class="results-table-wrap">
+          <table class="results-table" id="wideTable">
+            <thead>
+              <tr>
+                <th>Profile</th>
+                <th>Modality</th>
+                <th>Original V/A/D</th>
+                <th>Reviewer 1</th>
+                <th>Reviewer 2</th>
+                <th>Reviewer 3</th>
+                <th>Reviewer 4</th>
+              </tr>
+            </thead>
+            <tbody id="wideBody"></tbody>
+          </table>
+        </div>
+
+        <h2>Individual Responses</h2>
+        <div class="results-table-wrap">
+          <table class="results-table" id="resultsTable">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Participant</th>
+                <th>Profile</th>
+                <th>Modality</th>
+                <th>Valence</th>
+                <th>Arousal</th>
+                <th>Dominance</th>
+                <th>Confidence</th>
+                <th>Submitted At</th>
+              </tr>
+            </thead>
+            <tbody id="resultsBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <script src="./study2-results.js"></script>
+  </body>
+</html>

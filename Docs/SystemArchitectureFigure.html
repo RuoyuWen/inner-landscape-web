@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Path Co-Creation System — Generation Flow</title>
+<style>
+  :root {
+    --bg: #f5f6f8;
+    --surface: #ffffff;
+    --surface-2: #fbfbfd;
+    --line: #d7dbe3;
+    --text: #1b2233;
+    --text-soft: #5b6478;
+    --blue: #3757e8;
+    --blue-strong: #1f3ac2;
+    --blue-tint: #eef1ff;
+    --teal: #0f8f80;
+    --teal-strong: #0b6f63;
+    --teal-tint: #e9f7f4;
+    --purple: #6a4fd6;
+    --purple-strong: #4f37b0;
+    --purple-tint: #f1edfd;
+    --amber: #b8860b;
+    --amber-strong: #8a6208;
+    --amber-tint: #fbf1de;
+    --arrow: #3a3f4b;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  }
+  body { padding: 36px 28px 52px; }
+
+  .page-head { max-width: 1900px; margin: 0 auto 26px; padding: 0 4px; }
+  .page-head .kicker {
+    font-size: 15px; font-weight: 700; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--text-soft);
+  }
+  .page-head h1 { margin: 6px 0 0; font-size: 30px; font-weight: 800; text-wrap: balance; }
+
+  .canvas { position: relative; width: 1900px; height: 1600px; margin: 0 auto; }
+
+  .box { position: absolute; border-radius: 18px; border: 3px solid; background: var(--surface); }
+  .box.blue { border-color: var(--blue); }
+  .box.teal { border-color: var(--teal); }
+  .box.purple { border-color: var(--purple); border-style: dashed; }
+  .box.purple.solid { border-style: solid; }
+  .box.amber { border-color: var(--amber); }
+
+  .box-title {
+    position: absolute; top: 20px; left: 28px; right: 28px;
+    display: flex; align-items: center; gap: 12px;
+    font-weight: 800; font-size: 24px; text-wrap: balance;
+  }
+  .box-title .badge {
+    flex: none; width: 34px; height: 34px; border-radius: 50%;
+    color: #fff; display: flex; align-items: center; justify-content: center;
+    font-size: 17px; font-weight: 800;
+  }
+  .box-title.blue { color: var(--blue-strong); }
+  .box-title.blue .badge { background: var(--blue); }
+  .box-title.teal { color: var(--teal-strong); }
+  .box-title.teal .badge { background: var(--teal); }
+  .box-title.purple { color: var(--purple-strong); }
+  .box-title.purple .badge { background: var(--purple); }
+  .box-title .tag {
+    margin-left: 6px; font-size: 13px; font-weight: 700; letter-spacing: 0.05em;
+    text-transform: uppercase; color: var(--text-soft);
+  }
+
+  .card {
+    position: absolute; border-radius: 14px; border: 1.5px solid var(--line);
+    background: var(--surface-2); padding: 16px 18px 18px;
+  }
+  .card .card-head { display: flex; align-items: center; gap: 12px; }
+  .card .badge {
+    flex: none; width: 30px; height: 30px; border-radius: 50%;
+    background: var(--blue); color: #fff; display: flex; align-items: center;
+    justify-content: center; font-size: 15px; font-weight: 800;
+  }
+  .card .icon {
+    flex: none; width: 34px; height: 34px; display: flex; align-items: center;
+    justify-content: center; color: var(--blue);
+  }
+  .card .icon svg { width: 26px; height: 26px; }
+  .card h4 { margin: 0; font-size: 19px; font-weight: 800; color: var(--text); }
+  .card p { margin: 10px 0 0; font-size: 16.5px; line-height: 1.42; color: var(--text-soft); }
+
+  .info-box { position: absolute; padding: 22px 28px 26px; }
+  .info-head { display: flex; align-items: center; gap: 16px; margin-top: 6px; }
+  .info-head .icon {
+    flex: none; width: 52px; height: 52px; border-radius: 12px; border: 2px solid;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .info-head .icon.blue { border-color: var(--blue); color: var(--blue); background: var(--blue-tint); }
+  .info-head .icon.teal { border-color: var(--teal); color: var(--teal); background: var(--teal-tint); }
+  .info-head .icon svg { width: 28px; height: 28px; }
+  .info-head h3 { margin: 0; font-size: 21px; font-weight: 800; }
+  .info-head h3.blue { color: var(--blue-strong); }
+  .info-head h3.teal { color: var(--teal-strong); }
+  .info-head p.desc { margin: 4px 0 0; font-size: 16px; color: var(--text-soft); }
+
+  .bullets { list-style: none; margin: 16px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+  .bullets li { position: relative; padding-left: 22px; font-size: 17px; color: var(--text); line-height: 1.38; }
+  .bullets li::before {
+    content: ""; position: absolute; left: 3px; top: 8px; width: 8px; height: 8px; border-radius: 50%;
+  }
+  .box.blue .bullets li::before, .card.blue-dot .bullets li::before { background: var(--blue); }
+  .box.teal .bullets li::before { background: var(--teal); }
+  .box.purple .bullets li::before { background: var(--purple); }
+
+  .foot-note { margin: 14px 0 0; font-size: 15px; line-height: 1.4; color: var(--text-soft); }
+
+  .row { position: absolute; display: flex; align-items: center; }
+  .chip-row { display: flex; align-items: stretch; gap: 12px; }
+  .chevron-sep { display: flex; align-items: center; color: var(--text-soft); }
+  .chevron-sep svg { width: 20px; height: 20px; }
+
+  .player { position: absolute; display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .player .icon { width: 46px; height: 46px; color: var(--text); }
+  .player .icon svg { width: 100%; height: 100%; }
+  .player span { font-size: 17px; font-weight: 700; }
+
+  svg.connectors { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
+  .connectors path, .connectors line { stroke: var(--arrow); stroke-width: 3; fill: none; }
+  .connectors .dashed { stroke-dasharray: 8 7; }
+  .connectors marker path { fill: var(--arrow); }
+</style>
+</head>
+<body>
+
+<div class="page-head">
+  <div class="kicker">System Design — Path Co-Creation Flow</div>
+  <h1>Bubble-Picker Interface → Multimodal Prompt Generation → 2D / VR Output</h1>
+</div>
+
+<div class="canvas">
+
+  <!-- Player -->
+  <div class="player" style="left:10px; top:150px;">
+    <div class="icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="8" r="3.6"/><path d="M4.5 20.5c1.4-4.2 4.4-6.3 7.5-6.3s6.1 2.1 7.5 6.3"/>
+      </svg>
+    </div>
+    <span>Player</span>
+  </div>
+
+  <!-- ============ Path Co-Creation Interface ============ -->
+  <div class="box blue" style="left:130px; top:40px; width:1330px; height:340px;">
+    <div class="box-title blue">
+      <span class="badge">1</span> Path Co-Creation Interface <span class="tag">Web-based</span>
+    </div>
+    <div class="chip-row" style="position:absolute; left:28px; top:96px; right:28px; bottom:24px; align-items:stretch;">
+      <div class="card" style="flex:1; position:relative;">
+        <div class="card-head"><span class="badge">1</span><h4>Language</h4></div>
+        <p>Player selects a language to begin &mdash; no chat step in this flow.</p>
+      </div>
+      <div class="chevron-sep"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></div>
+      <div class="card" style="flex:1; position:relative;">
+        <div class="card-head"><span class="badge">2</span><h4>Intro</h4></div>
+        <p>Shows an illustrated intro image and plays a narrated voice guide.</p>
+      </div>
+      <div class="chevron-sep"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></div>
+      <div class="card" style="flex:1.25; position:relative;">
+        <div class="card-head"><span class="badge">3</span><h4>Bubbles &mdash; 4 Quick Choices</h4></div>
+        <p>Tree-structured chip picker for season, weather, time, and light. Confirm at any depth, or type a custom answer.</p>
+      </div>
+      <div class="chevron-sep"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></div>
+      <div class="card" style="flex:1; position:relative;">
+        <div class="card-head"><span class="badge">4</span><h4>Confirm</h4></div>
+        <p>One OpenAI call turns the selections into the same three-prompt JSON shape the rest of the system uses.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scene Concept (fixed) -->
+  <div class="box purple" style="left:1520px; top:40px; width:370px; height:400px;">
+    <div class="box-title purple" style="font-size:20px;">Scene Concept <span class="tag">Fixed, not collected</span></div>
+    <ul class="bullets" style="position:absolute; left:28px; top:88px; right:24px;">
+      <li>Always a road extending into the distance, flanked by trees on both sides</li>
+      <li>Season, weather, time, and light &mdash; 4 choices only</li>
+      <li>No place, sound sources, or spatial layout collected</li>
+      <li>Forbids people, buildings, vehicles, signage, text</li>
+    </ul>
+  </div>
+
+  <!-- ============ Multimodal Prompt Generation ============ -->
+  <div class="box purple solid" style="left:410px; top:470px; width:1080px; height:260px;">
+    <div class="box-title purple"><span class="badge">5</span> Multimodal Prompt Generation</div>
+    <div style="position:absolute; left:28px; top:92px; width:600px; font-size:17px; line-height:1.45; color:var(--text);">
+      One OpenAI Responses call turns the confirmed selections into modality-specific prompts &mdash; the same shape the chatbot front end also produces.
+      <p class="foot-note">* Background music prompt is generated but synthesis is currently disabled.</p>
+    </div>
+    <ul class="bullets" style="position:absolute; right:28px; top:92px; width:380px;">
+      <li>Environment prompt</li>
+      <li>Ambient sound prompt</li>
+      <li>Background music prompt *</li>
+    </ul>
+  </div>
+
+  <!-- ============ 2D Mode Generation ============ -->
+  <div class="box blue" style="left:40px; top:820px; width:900px; height:400px;">
+    <div class="box-title blue"><span class="badge">6a</span> 2D Mode Generation <span class="tag">Web + API</span></div>
+    <div style="position:absolute; left:28px; top:92px; right:28px; bottom:24px; display:flex; gap:16px;">
+      <div class="card" style="flex:1; position:relative;">
+        <div class="card-head">
+          <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="14" rx="2"/><circle cx="8.3" cy="9.3" r="1.5"/><path d="M3.5 17l5.2-5.5a1.3 1.3 0 0 1 1.9 0L15 16"/></svg></div>
+          <h4>2D Image Generation</h4>
+        </div>
+        <p>Flattened environment prompt &rarr; OpenAI image API &rarr; single flat scene image.</p>
+      </div>
+      <div class="card" style="flex:1; position:relative;">
+        <div class="card-head">
+          <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13h3l2.3-6 3.4 12 2.3-9 1.7 3H21"/></svg></div>
+          <h4>Ambient Sound Generation</h4>
+        </div>
+        <p>Sound prompt &rarr; ElevenLabs or fal.ai (Stable Audio) &rarr; looping ambient sound.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shared Prompt connector -->
+  <div class="box purple solid" style="left:975px; top:900px; width:330px; height:250px;">
+    <div style="position:absolute; left:0; right:0; top:22px; text-align:center; color:var(--purple-strong); font-size:26px;">&#8596;</div>
+    <div style="position:absolute; left:0; right:0; top:62px; text-align:center; font-size:19px; font-weight:800; color:var(--purple-strong);">Shared Prompt</div>
+    <div style="position:absolute; left:0; right:0; top:92px; text-align:center; font-size:13px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase; color:var(--text-soft);">JSON file</div>
+    <p style="position:absolute; left:24px; right:24px; top:128px; font-size:15.5px; line-height:1.42; color:var(--text-soft); text-align:center;">
+      Saved locally as <code>generated_prompt.json</code> and consumed by both 2D and VR pipelines through the same endpoints.
+    </p>
+  </div>
+
+  <!-- ============ VR Mode Generation ============ -->
+  <div class="box teal" style="left:1360px; top:820px; width:900px; height:400px;">
+    <div class="box-title teal"><span class="badge">6b</span> VR Mode Generation <span class="tag">Unreal Engine</span></div>
+    <div style="position:absolute; left:28px; top:92px; right:28px; display:flex; gap:16px;">
+      <div class="card" style="flex:1; position:relative;">
+        <div class="card-head">
+          <div class="icon" style="color:var(--teal);" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="12" rx="9" ry="4"/><path d="M12 3v18"/></svg></div>
+          <h4>360&deg; Visual Environment Generation</h4>
+        </div>
+        <p>Un-flattened panorama prompt &rarr; OpenAI image API &rarr; PNG &rarr; HDR.</p>
+      </div>
+      <div class="card" style="flex:1; position:relative;">
+        <div class="card-head">
+          <div class="icon" style="color:var(--teal);" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13h3l2.3-6 3.4 12 2.3-9 1.7 3H21"/></svg></div>
+          <h4>Ambient Sound Generation</h4>
+        </div>
+        <p>Same sound prompt &rarr; ElevenLabs or fal.ai &rarr; WAV via ffmpeg for Unreal.</p>
+      </div>
+    </div>
+    <div style="position:absolute; left:28px; top:250px; right:28px; display:flex; gap:16px;">
+      <div class="card" style="flex:1; position:relative; border-color:var(--teal); border-style:dashed;">
+        <h4 style="color:var(--teal-strong); font-size:16.5px;">&#9889; Pregenerated (fast path)</h4>
+        <p style="font-size:14.5px;">Python runs the two calls above ahead of time to a fixed, overwrite-in-place path. Unreal imports instantly at &ldquo;start experience.&rdquo;</p>
+      </div>
+      <div class="card" style="flex:1; position:relative; border-color:var(--teal); border-style:dashed;">
+        <h4 style="color:var(--teal-strong); font-size:16.5px;">&#8618; Live (fallback)</h4>
+        <p style="font-size:14.5px;">Blueprint nodes call OpenAI/ElevenLabs directly on click, blocking the editor thread while generation runs.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ Output row ============ -->
+  <div class="box blue info-box" style="left:40px; top:1300px; width:560px; height:250px;">
+    <div class="info-head">
+      <div class="icon blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="13" rx="1.5"/><path d="M8 21h8M12 17.5V21"/></svg></div>
+      <div><h3 class="blue">2D Audiovisual Experience</h3><p class="desc">Browser</p></div>
+    </div>
+    <p style="margin-top:18px; font-size:17px; line-height:1.45; color:var(--text-soft);">The 2D image and ambient sound are presented together in the browser.</p>
+  </div>
+
+  <div class="box amber info-box" style="left:660px; top:1300px; width:640px; height:250px;">
+    <div class="info-head">
+      <div class="icon" style="border-color:var(--amber); color:var(--amber-strong); background:var(--amber-tint);" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a1 1 0 0 1 1-1h5l2 2h9a1 1 0 0 1 1 1v1H5.2a1 1 0 0 0-1 .8L3 17.5"/><path d="M3 17.5L4.7 10a1 1 0 0 1 1-.8H21l-2 8.5a1 1 0 0 1-1 .8H4a1 1 0 0 1-1-1z"/></svg></div>
+      <div><h3 style="color:var(--amber-strong);">Generation Record &amp; Review</h3><p class="desc">Browser</p></div>
+    </div>
+    <p style="margin-top:18px; font-size:17px; line-height:1.45; color:var(--text-soft);">Every 2D and VR generation is archived to <code>record/&lt;timestamp&gt;/</code>, browsable in <code>record.html</code> &mdash; flat playback for 2D, an in-browser WebGL 360&deg; viewer for VR.</p>
+  </div>
+
+  <div class="box teal info-box" style="left:1360px; top:1300px; width:900px; height:250px;">
+    <div class="info-head">
+      <div class="icon teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9.5c0-1.4 1.1-2.5 2.5-2.5h11c1.4 0 2.5 1.1 2.5 2.5v3.2c0 1.7-1.4 3.1-3.1 3.1-1.2 0-2.3-.7-2.8-1.8l-.5-1.1a1.7 1.7 0 0 0-3.2 0l-.5 1.1c-.5 1.1-1.6 1.8-2.8 1.8A3.1 3.1 0 0 1 4 12.7V9.5z"/></svg></div>
+      <div><h3 class="teal">Immersive VR Experience</h3><p class="desc">Unreal Engine</p></div>
+    </div>
+    <p style="margin-top:18px; font-size:17px; line-height:1.45; color:var(--text-soft);">The 360&deg; environment and ambient sound are combined in a VR scene.</p>
+  </div>
+
+  <!-- ============ CONNECTORS ============ -->
+  <svg class="connectors">
+    <defs>
+      <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M0 0L10 5L0 10z"/>
+      </marker>
+    </defs>
+    <!-- player -> interface -->
+    <line x1="60" y1="196" x2="126" y2="196" marker-end="url(#arrow)"/>
+    <!-- interface -> scene concept -->
+    <path class="dashed" d="M1460 210 H1516" marker-end="url(#arrow)"/>
+    <!-- interface -> multimodal prompt generation -->
+    <path d="M950 380 V440 H950 V466" marker-end="url(#arrow)"/>
+    <!-- multimodal -> 2D generation -->
+    <path d="M700 730 V786 H490 V816" marker-end="url(#arrow)"/>
+    <!-- multimodal -> VR generation -->
+    <path d="M1200 730 V786 H1810 V816" marker-end="url(#arrow)"/>
+    <!-- 2D generation -> 2D experience -->
+    <line x1="320" y1="1220" x2="320" y2="1296" marker-end="url(#arrow)"/>
+    <!-- VR generation -> VR experience -->
+    <line x1="1810" y1="1220" x2="1810" y2="1296" marker-end="url(#arrow)"/>
+    <!-- 2D generation -> record (dashed) -->
+    <path class="dashed" d="M700 1220 V1260 H900 V1296" marker-end="url(#arrow)"/>
+    <!-- VR generation -> record (dashed) -->
+    <path class="dashed" d="M1600 1220 V1260 H1080 V1296" marker-end="url(#arrow)"/>
+  </svg>
+
+</div>
+
+</body>
+</html>

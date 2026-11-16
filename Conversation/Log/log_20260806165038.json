@@ -1,0 +1,44 @@
+{
+  "project_id": "PATH_20260806165038",
+  "created_at": "2026-08-06T04:50:47.766Z",
+  "mode": "path-bubble-picker",
+  "language": "zh-CN",
+  "selections": {
+    "season": {
+      "label": "晚冬",
+      "path": [
+        "winter",
+        "winter_late"
+      ]
+    },
+    "weather": {
+      "label": "暴雨",
+      "path": [
+        "rain",
+        "rain_heavy"
+      ]
+    },
+    "time": {
+      "label": "暮色四合",
+      "path": [
+        "dusk",
+        "dusk_twilight"
+      ]
+    },
+    "light": {
+      "label": "冷白柔光",
+      "path": [
+        "soft",
+        "soft_cool"
+      ]
+    },
+    "road": {
+      "course": "gentle_bend",
+      "width": "medium",
+      "surface": "stone",
+      "custom": false,
+      "label": "微微蜿蜒 · 适中 · 石板"
+    }
+  },
+  "title": "Winter Rain Path"
+}

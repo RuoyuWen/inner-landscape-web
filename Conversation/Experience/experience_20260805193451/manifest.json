@@ -1,0 +1,9 @@
+{
+  "image_model": "gpt-image-2",
+  "flat_image_prompt": "A serene pine forest by the sea at dusk in summer. The warm orange-red glow of the setting sun casts long shadows through the trees, creating a peaceful ambiance. A gentle breeze rustles the pine needles, enhancing the tranquility. The scene is open and expansive, with a clear view of the distant horizon over the ocean. A smooth, water-worn rock lies near a small path that leads to the beach. The sky is clear, and the weather is calm. No people, no buildings. Create one realistic flat 2D landscape image, single camera view, natural perspective, 3:2 composition, not panoramic, not equirectangular, no fisheye distortion, no split view, no frame, no text, no watermark.",
+  "sound_prompt": "Soft, gentle, low-intensity background ambience with the continuous sound of ocean waves and the gentle rustling of pine needles in the breeze. No voices, no vehicle sounds, no sudden loud events. No static, no hiss, no white noise, no distortion, no crackle, no clipping. Soft, clean recording. No static, no hiss, no white noise, no distortion, no crackle, no clipping.",
+  "music_prompt": "Soft non-vocal ambient instrumental music with a slow tempo, featuring gentle strings and light wind instruments. The music creates a warm, soothing texture with low intensity. No vocals, no lyrics, no percussion hits, no sudden dramatic changes.",
+  "image_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260805193451\\image.png",
+  "sound_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260805193451\\sound_effect.mp3",
+  "music_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260805193451\\music.mp3"
+}

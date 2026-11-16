@@ -1,0 +1,43 @@
+{
+  "project_id": "PATH_20260812174239",
+  "created_at": "2026-08-12T05:42:40.309Z",
+  "mode": "path-bubble-picker",
+  "language": "zh-CN",
+  "selections": {
+    "season": {
+      "label": "夏",
+      "path": [
+        "summer"
+      ]
+    },
+    "weather": {
+      "label": "阳光炽烈",
+      "path": [
+        "clear",
+        "clear_bright"
+      ]
+    },
+    "time": {
+      "label": "日落时分",
+      "path": [
+        "dusk",
+        "dusk_sunset"
+      ]
+    },
+    "light": {
+      "label": "阳光炽烈",
+      "path": [
+        "bright",
+        "bright_blazing"
+      ]
+    },
+    "road": {
+      "course": "gentle_bend",
+      "width": "medium",
+      "surface": "asphalt",
+      "custom": false,
+      "label": "微微蜿蜒 · 适中 · 柏油"
+    }
+  },
+  "title": "Sunset Pathway"
+}

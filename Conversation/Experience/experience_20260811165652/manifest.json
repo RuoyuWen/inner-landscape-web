@@ -1,0 +1,9 @@
+{
+  "image_model": "gpt-image-2",
+  "flat_image_prompt": "The scene shows a modestly wide, gently winding gravel path, curving gently from side to side as it recedes from the foreground toward the horizon, its vanishing point shifting subtly with the bend, shown in a naturalistic centered perspective. A modest, sparse number of trees stand along each side of the path -- not a dense or continuous row -- spaced well apart, canopies visible against the sky, thinning out further toward the horizon. The path and its flanking trees are the only structural elements in the scene -- no forks, no side paths, no clearings, no other landmarks. In mid-autumn, the path is shrouded by overcast skies, with a cool breeze rustling through the sparse foliage. The air carries a faint chill, typical of the season, with hints of damp earth. Dusk envelops the scene, casting everything in a dim, ethereal glow that softens the outlines of the trees. Create one realistic flat 2D landscape image, single camera view, natural perspective, 3:2 composition, not panoramic, not equirectangular, no fisheye distortion, no split view, no frame, no text, no watermark.",
+  "sound_prompt": "a gentle, soft breeze rustling leaves Soft, clean recording. No static, no hiss, no white noise, no distortion, no crackle, no clipping.",
+  "music_prompt": "disabled",
+  "image_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260811165652\\image.png",
+  "sound_path": "C:\\VR\\vrst\\Conversation\\Experience\\experience_20260811165652\\sound_effect.mp3",
+  "music_path": null
+}

@@ -1,0 +1,44 @@
+{
+  "project_id": "PATH_20260811140137",
+  "created_at": "2026-08-11T02:01:39.145Z",
+  "mode": "path-bubble-picker",
+  "language": "zh-CN",
+  "selections": {
+    "season": {
+      "label": "盛夏",
+      "path": [
+        "summer",
+        "summer_peak"
+      ]
+    },
+    "weather": {
+      "label": "狂风但是小雨",
+      "path": [
+        "custom"
+      ],
+      "custom": true
+    },
+    "time": {
+      "label": "正午",
+      "path": [
+        "daytime",
+        "daytime_noon"
+      ]
+    },
+    "light": {
+      "label": "反光刺眼",
+      "path": [
+        "bright",
+        "bright_glare"
+      ]
+    },
+    "road": {
+      "course": "gentle_bend",
+      "width": "medium",
+      "surface": "gravel",
+      "custom": false,
+      "label": "微微蜿蜒 · 适中 · 碎石"
+    }
+  },
+  "title": "Blustery Midday in High Summer"
+}

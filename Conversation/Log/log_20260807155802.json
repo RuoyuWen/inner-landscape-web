@@ -1,0 +1,44 @@
+{
+  "project_id": "PATH_20260807155802",
+  "created_at": "2026-08-07T03:58:03.851Z",
+  "mode": "path-bubble-picker",
+  "language": "zh-CN",
+  "selections": {
+    "season": {
+      "label": "盛夏",
+      "path": [
+        "summer",
+        "summer_peak"
+      ]
+    },
+    "weather": {
+      "label": "雷阵雨",
+      "path": [
+        "rain",
+        "rain_thunder"
+      ]
+    },
+    "time": {
+      "label": "正午",
+      "path": [
+        "daytime",
+        "daytime_noon"
+      ]
+    },
+    "light": {
+      "label": "强烈光影对比",
+      "path": [
+        "dramatic",
+        "dramatic_contrast"
+      ]
+    },
+    "road": {
+      "course": "winding",
+      "width": "medium",
+      "surface": "gravel",
+      "custom": false,
+      "label": "蜿蜒曲折 · 适中 · 碎石"
+    }
+  },
+  "title": "Summer Storm Path"
+}

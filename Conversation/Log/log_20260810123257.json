@@ -1,0 +1,44 @@
+{
+  "project_id": "PATH_20260810123257",
+  "created_at": "2026-08-10T00:32:58.404Z",
+  "mode": "path-bubble-picker",
+  "language": "zh-CN",
+  "selections": {
+    "season": {
+      "label": "仲秋",
+      "path": [
+        "autumn",
+        "autumn_mid"
+      ]
+    },
+    "weather": {
+      "label": "电闪雷鸣狂风暴雨加冰雹",
+      "path": [
+        "custom"
+      ],
+      "custom": true
+    },
+    "time": {
+      "label": "深夜",
+      "path": [
+        "night",
+        "night_late"
+      ]
+    },
+    "light": {
+      "label": "强烈光影对比",
+      "path": [
+        "dramatic",
+        "dramatic_contrast"
+      ]
+    },
+    "road": {
+      "course": "winding",
+      "width": "narrow",
+      "surface": "gravel",
+      "custom": false,
+      "label": "蜿蜒曲折 · 狭窄 · 碎石"
+    }
+  },
+  "title": "Midnight Tempest Pathway"
+}

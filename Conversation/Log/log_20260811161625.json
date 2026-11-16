@@ -1,0 +1,44 @@
+{
+  "project_id": "PATH_20260811161625",
+  "created_at": "2026-08-11T04:16:28.943Z",
+  "mode": "path-bubble-picker",
+  "language": "zh-CN",
+  "selections": {
+    "season": {
+      "label": "初冬",
+      "path": [
+        "winter",
+        "winter_early"
+      ]
+    },
+    "weather": {
+      "label": "雷阵雨",
+      "path": [
+        "rain",
+        "rain_thunder"
+      ]
+    },
+    "time": {
+      "label": "星空",
+      "path": [
+        "night",
+        "night_starry"
+      ]
+    },
+    "light": {
+      "label": "强烈光影对比",
+      "path": [
+        "dramatic",
+        "dramatic_contrast"
+      ]
+    },
+    "road": {
+      "course": "winding",
+      "width": "narrow",
+      "surface": "dirt",
+      "custom": false,
+      "label": "蜿蜒曲折 · 狭窄 · 泥土"
+    }
+  },
+  "title": "Path Through a Winter Storm"
+}

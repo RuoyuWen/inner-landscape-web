@@ -1,0 +1,44 @@
+{
+  "project_id": "PATH_20260811165652",
+  "created_at": "2026-08-11T04:57:00.592Z",
+  "mode": "path-bubble-picker",
+  "language": "zh-CN",
+  "selections": {
+    "season": {
+      "label": "仲秋",
+      "path": [
+        "autumn",
+        "autumn_mid"
+      ]
+    },
+    "weather": {
+      "label": "阴天，并且伴随着一些微风，温度稍低",
+      "path": [
+        "custom"
+      ],
+      "custom": true
+    },
+    "time": {
+      "label": "暮色四合",
+      "path": [
+        "dusk",
+        "dusk_twilight"
+      ]
+    },
+    "light": {
+      "label": "朦胧微光",
+      "path": [
+        "soft",
+        "soft_hazy"
+      ]
+    },
+    "road": {
+      "course": "gentle_bend",
+      "width": "medium",
+      "surface": "gravel",
+      "custom": false,
+      "label": "微微蜿蜒 · 适中 · 碎石"
+    }
+  },
+  "title": "Dusky Autumn Pathway"
+}
